@@ -18,6 +18,7 @@ test('My first test with video', async ({ browser }) => {
     await page.click('input[name="password"]');
     await page.fill('input[name="password"]', 'password');
     await page.click('button[id="login-form-submit-button"]');
+   await page.waitForTimeout(10000);
   } catch (err) {
     console.error('❌ Ошибка во время выполнения теста:', err);
   } finally {

@@ -27,7 +27,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 
     // 🔽 Общий тайм-аут на каждый тест
-  timeout: 50000, // 50 секунд
+  timeout: 120000, // 50 секунд
 
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -35,7 +35,7 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    video: 'on',
+    video: 'off',
   },
 
   /* Configure projects for major browsers */

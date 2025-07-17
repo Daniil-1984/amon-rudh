@@ -34,6 +34,14 @@ export async function startVideoRecording(page: any, videoPath: string) {
 }
 
 /**
+ * Задержка на 5 секунд
+ * @returns Promise<void>
+ */
+export function delay5Seconds(): Promise<void> {
+  return wait(5000);
+}
+
+/**
  * Stops video recording for Playwright and saves the trace
  * @param page Playwright Page object
  * @param videoPath where to save the trace zip
