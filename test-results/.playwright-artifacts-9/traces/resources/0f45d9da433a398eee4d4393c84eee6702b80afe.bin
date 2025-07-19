@@ -1,0 +1,321 @@
+
+confetti.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+konfete_testRend_00
+  rotate: false
+  xy: 1584, 731
+  size: 27, 19
+  orig: 400, 400
+  offset: 181, 197
+  index: -1
+konfete_testRend_01
+  rotate: false
+  xy: 86, 30
+  size: 46, 39
+  orig: 400, 400
+  offset: 179, 198
+  index: -1
+konfete_testRend_02
+  rotate: false
+  xy: 420, 59
+  size: 66, 57
+  orig: 400, 400
+  offset: 171, 197
+  index: -1
+konfete_testRend_03
+  rotate: false
+  xy: 2, 2
+  size: 82, 67
+  orig: 400, 400
+  offset: 165, 201
+  index: -1
+konfete_testRend_04
+  rotate: false
+  xy: 729, 349
+  size: 98, 77
+  orig: 400, 400
+  offset: 157, 202
+  index: -1
+konfete_testRend_05
+  rotate: true
+  xy: 1220, 585
+  size: 127, 94
+  orig: 400, 400
+  offset: 141, 204
+  index: -1
+konfete_testRend_06
+  rotate: true
+  xy: 744, 579
+  size: 139, 101
+  orig: 400, 400
+  offset: 134, 204
+  index: -1
+konfete_testRend_07
+  rotate: true
+  xy: 739, 428
+  size: 149, 106
+  orig: 400, 400
+  offset: 129, 205
+  index: -1
+konfete_testRend_08
+  rotate: false
+  xy: 261, 5
+  size: 157, 111
+  orig: 400, 400
+  offset: 124, 206
+  index: -1
+konfete_testRend_09
+  rotate: false
+  xy: 847, 473
+  size: 166, 116
+  orig: 400, 400
+  offset: 119, 206
+  index: -1
+konfete_testRend_10
+  rotate: false
+  xy: 1045, 593
+  size: 173, 119
+  orig: 400, 400
+  offset: 115, 207
+  index: -1
+konfete_testRend_11
+  rotate: false
+  xy: 1855, 651
+  size: 185, 125
+  orig: 400, 400
+  offset: 108, 207
+  index: -1
+konfete_testRend_12
+  rotate: false
+  xy: 1853, 895
+  size: 191, 127
+  orig: 400, 400
+  offset: 105, 208
+  index: -1
+konfete_testRend_13
+  rotate: false
+  xy: 847, 591
+  size: 196, 129
+  orig: 400, 400
+  offset: 102, 208
+  index: -1
+konfete_testRend_14
+  rotate: false
+  xy: 498, 31
+  size: 200, 130
+  orig: 400, 400
+  offset: 100, 209
+  index: -1
+konfete_testRend_15
+  rotate: false
+  xy: 1832, 521
+  size: 208, 128
+  orig: 400, 400
+  offset: 95, 214
+  index: -1
+konfete_testRend_16
+  rotate: false
+  xy: 503, 163
+  size: 212, 135
+  orig: 400, 400
+  offset: 93, 209
+  index: -1
+konfete_testRend_17
+  rotate: false
+  xy: 512, 300
+  size: 215, 137
+  orig: 400, 400
+  offset: 91, 209
+  index: -1
+konfete_testRend_18
+  rotate: false
+  xy: 519, 439
+  size: 218, 138
+  orig: 400, 400
+  offset: 89, 209
+  index: -1
+konfete_testRend_19
+  rotate: false
+  xy: 522, 579
+  size: 220, 139
+  orig: 400, 400
+  offset: 88, 210
+  index: -1
+konfete_testRend_20
+  rotate: false
+  xy: 816, 722
+  size: 225, 142
+  orig: 400, 400
+  offset: 85, 210
+  index: -1
+konfete_testRend_21
+  rotate: false
+  xy: 548, 720
+  size: 228, 143
+  orig: 400, 400
+  offset: 84, 210
+  index: -1
+konfete_testRend_22
+  rotate: false
+  xy: 266, 118
+  size: 230, 144
+  orig: 400, 400
+  offset: 82, 210
+  index: -1
+konfete_testRend_23
+  rotate: false
+  xy: 269, 264
+  size: 232, 145
+  orig: 400, 400
+  offset: 81, 210
+  index: -1
+konfete_testRend_24
+  rotate: false
+  xy: 1618, 720
+  size: 235, 147
+  orig: 400, 400
+  offset: 80, 210
+  index: -1
+konfete_testRend_25
+  rotate: false
+  xy: 271, 411
+  size: 239, 148
+  orig: 400, 400
+  offset: 78, 210
+  index: -1
+konfete_testRend_26
+  rotate: false
+  xy: 275, 561
+  size: 242, 149
+  orig: 400, 400
+  offset: 77, 210
+  index: -1
+konfete_testRend_27
+  rotate: false
+  xy: 276, 712
+  size: 244, 150
+  orig: 400, 400
+  offset: 76, 210
+  index: -1
+konfete_testRend_28
+  rotate: false
+  xy: 1584, 567
+  size: 246, 151
+  orig: 400, 400
+  offset: 75, 210
+  index: -1
+konfete_testRend_29
+  rotate: false
+  xy: 1334, 599
+  size: 248, 151
+  orig: 400, 400
+  offset: 74, 211
+  index: -1
+konfete_testRend_30
+  rotate: false
+  xy: 1081, 714
+  size: 251, 152
+  orig: 400, 400
+  offset: 73, 211
+  index: -1
+konfete_testRend_31
+  rotate: false
+  xy: 1598, 869
+  size: 253, 153
+  orig: 400, 400
+  offset: 72, 211
+  index: -1
+konfete_testRend_32
+  rotate: false
+  xy: 1342, 869
+  size: 254, 153
+  orig: 400, 400
+  offset: 72, 211
+  index: -1
+konfete_testRend_33
+  rotate: false
+  xy: 2, 71
+  size: 257, 154
+  orig: 400, 400
+  offset: 71, 211
+  index: -1
+konfete_testRend_34
+  rotate: false
+  xy: 1081, 868
+  size: 259, 154
+  orig: 400, 400
+  offset: 70, 211
+  index: -1
+konfete_testRend_35
+  rotate: false
+  xy: 2, 227
+  size: 262, 155
+  orig: 400, 400
+  offset: 69, 211
+  index: -1
+konfete_testRend_36
+  rotate: false
+  xy: 816, 866
+  size: 263, 156
+  orig: 400, 400
+  offset: 69, 211
+  index: -1
+konfete_testRend_37
+  rotate: false
+  xy: 2, 384
+  size: 265, 157
+  orig: 400, 400
+  offset: 68, 210
+  index: -1
+konfete_testRend_38
+  rotate: false
+  xy: 548, 865
+  size: 266, 157
+  orig: 400, 400
+  offset: 68, 210
+  index: -1
+konfete_testRend_39
+  rotate: false
+  xy: 2, 543
+  size: 267, 158
+  orig: 400, 400
+  offset: 67, 210
+  index: -1
+konfete_testRend_40
+  rotate: false
+  xy: 276, 864
+  size: 270, 158
+  orig: 400, 400
+  offset: 66, 210
+  index: -1
+konfete_testRend_41
+  rotate: false
+  xy: 2, 703
+  size: 271, 158
+  orig: 400, 400
+  offset: 66, 210
+  index: -1
+konfete_testRend_42
+  rotate: false
+  xy: 2, 863
+  size: 272, 159
+  orig: 400, 400
+  offset: 66, 210
+  index: -1
+konfete_testRend_43
+  rotate: false
+  xy: 1342, 752
+  size: 274, 115
+  orig: 400, 400
+  offset: 65, 251
+  index: -1
+konfete_testRend_44
+  rotate: false
+  xy: 1855, 778
+  size: 191, 115
+  orig: 400, 400
+  offset: 84, 251
+  index: -1

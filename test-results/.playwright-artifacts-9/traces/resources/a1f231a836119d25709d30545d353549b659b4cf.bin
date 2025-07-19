@@ -1,0 +1,328 @@
+
+M4.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+M4_00
+  rotate: false
+  xy: 2, 581
+  size: 220, 219
+  orig: 220, 220
+  offset: 0, 0
+  index: -1
+M4_b
+  rotate: false
+  xy: 2, 802
+  size: 220, 220
+  orig: 220, 220
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 377
+  size: 204, 202
+  orig: 206, 204
+  offset: 1, 1
+  index: -1
+frame
+  rotate: false
+  xy: 224, 803
+  size: 220, 219
+  orig: 220, 220
+  offset: 0, 0
+  index: -1
+head_up
+  rotate: true
+  xy: 245, 2
+  size: 71, 16
+  orig: 73, 18
+  offset: 1, 1
+  index: -1
+kosulja
+  rotate: false
+  xy: 224, 574
+  size: 162, 76
+  orig: 164, 78
+  offset: 1, 1
+  index: -1
+kosulja_BG
+  rotate: true
+  xy: 921, 642
+  size: 100, 78
+  orig: 102, 80
+  offset: 1, 1
+  index: -1
+kosulja_senka
+  rotate: false
+  xy: 2, 2
+  size: 99, 71
+  orig: 101, 73
+  offset: 1, 1
+  index: -1
+lepeza
+  rotate: true
+  xy: 138, 219
+  size: 156, 68
+  orig: 158, 70
+  offset: 1, 1
+  index: -1
+lepeza_senka
+  rotate: false
+  xy: 103, 19
+  size: 140, 54
+  orig: 142, 56
+  offset: 1, 1
+  index: -1
+neck
+  rotate: false
+  xy: 900, 744
+  size: 95, 127
+  orig: 97, 129
+  offset: 1, 1
+  index: -1
+sequence_pack/M4_sequence_00
+  rotate: false
+  xy: 138, 75
+  size: 127, 142
+  orig: 220, 220
+  offset: 49, 62
+  index: -1
+sequence_pack/M4_sequence_01
+  rotate: true
+  xy: 494, 590
+  size: 129, 144
+  orig: 220, 220
+  offset: 48, 60
+  index: -1
+sequence_pack/M4_sequence_02
+  rotate: false
+  xy: 790, 576
+  size: 129, 145
+  orig: 220, 220
+  offset: 48, 59
+  index: -1
+sequence_pack/M4_sequence_03
+  rotate: true
+  xy: 478, 158
+  size: 130, 147
+  orig: 220, 220
+  offset: 48, 57
+  index: -1
+sequence_pack/M4_sequence_04
+  rotate: true
+  xy: 627, 146
+  size: 130, 147
+  orig: 220, 220
+  offset: 48, 56
+  index: -1
+sequence_pack/M4_sequence_05
+  rotate: true
+  xy: 640, 590
+  size: 131, 148
+  orig: 220, 220
+  offset: 48, 55
+  index: -1
+sequence_pack/M4_sequence_06
+  rotate: false
+  xy: 361, 652
+  size: 131, 149
+  orig: 220, 220
+  offset: 49, 54
+  index: -1
+sequence_pack/M4_sequence_07
+  rotate: false
+  xy: 494, 721
+  size: 131, 149
+  orig: 220, 220
+  offset: 50, 54
+  index: -1
+sequence_pack/M4_sequence_08
+  rotate: false
+  xy: 344, 422
+  size: 132, 150
+  orig: 220, 220
+  offset: 51, 54
+  index: -1
+sequence_pack/M4_sequence_09
+  rotate: false
+  xy: 344, 270
+  size: 132, 150
+  orig: 220, 220
+  offset: 52, 54
+  index: -1
+sequence_pack/M4_sequence_10
+  rotate: false
+  xy: 446, 872
+  size: 133, 150
+  orig: 220, 220
+  offset: 52, 54
+  index: -1
+sequence_pack/M4_sequence_11
+  rotate: false
+  xy: 2, 226
+  size: 134, 149
+  orig: 220, 220
+  offset: 53, 55
+  index: -1
+sequence_pack/M4_sequence_12
+  rotate: false
+  xy: 581, 873
+  size: 134, 149
+  orig: 220, 220
+  offset: 53, 55
+  index: -1
+sequence_pack/M4_sequence_13
+  rotate: false
+  xy: 2, 75
+  size: 134, 149
+  orig: 220, 220
+  offset: 53, 55
+  index: -1
+sequence_pack/M4_sequence_14
+  rotate: false
+  xy: 717, 873
+  size: 134, 149
+  orig: 220, 220
+  offset: 53, 55
+  index: -1
+sequence_pack/M4_sequence_15
+  rotate: false
+  xy: 853, 873
+  size: 134, 149
+  orig: 220, 220
+  offset: 53, 55
+  index: -1
+sequence_pack/M4_sequence_16
+  rotate: false
+  xy: 208, 423
+  size: 134, 149
+  orig: 220, 220
+  offset: 53, 55
+  index: -1
+sequence_pack/M4_sequence_17
+  rotate: false
+  xy: 764, 723
+  size: 134, 148
+  orig: 220, 220
+  offset: 53, 56
+  index: -1
+sequence_pack/M4_sequence_18
+  rotate: false
+  xy: 478, 440
+  size: 134, 148
+  orig: 220, 220
+  offset: 53, 56
+  index: -1
+sequence_pack/M4_sequence_19
+  rotate: false
+  xy: 478, 290
+  size: 134, 148
+  orig: 220, 220
+  offset: 53, 56
+  index: -1
+sequence_pack/M4_sequence_20
+  rotate: false
+  xy: 614, 291
+  size: 134, 147
+  orig: 220, 220
+  offset: 53, 57
+  index: -1
+sequence_pack/M4_sequence_21
+  rotate: false
+  xy: 750, 427
+  size: 134, 147
+  orig: 220, 220
+  offset: 53, 57
+  index: -1
+sequence_pack/M4_sequence_22
+  rotate: false
+  xy: 750, 278
+  size: 134, 147
+  orig: 220, 220
+  offset: 53, 57
+  index: -1
+sequence_pack/M4_sequence_23
+  rotate: false
+  xy: 614, 440
+  size: 134, 148
+  orig: 220, 220
+  offset: 53, 56
+  index: -1
+sequence_pack/M4_sequence_24
+  rotate: false
+  xy: 208, 272
+  size: 134, 149
+  orig: 220, 220
+  offset: 53, 56
+  index: -1
+sequence_pack/M4_sequence_25
+  rotate: false
+  xy: 224, 652
+  size: 135, 149
+  orig: 220, 220
+  offset: 53, 56
+  index: -1
+sequence_pack/M4_sequence_26
+  rotate: false
+  xy: 627, 723
+  size: 135, 148
+  orig: 220, 220
+  offset: 53, 57
+  index: -1
+sequence_pack/M4_sequence_27
+  rotate: false
+  xy: 886, 426
+  size: 133, 148
+  orig: 220, 220
+  offset: 53, 57
+  index: -1
+sequence_pack/M4_sequence_28
+  rotate: false
+  xy: 886, 276
+  size: 133, 148
+  orig: 220, 220
+  offset: 52, 57
+  index: -1
+sequence_pack/M4_sequence_29
+  rotate: false
+  xy: 267, 121
+  size: 132, 147
+  orig: 220, 220
+  offset: 51, 58
+  index: -1
+sequence_pack/M4_sequence_30
+  rotate: true
+  xy: 776, 143
+  size: 131, 146
+  orig: 220, 220
+  offset: 50, 59
+  index: -1
+sequence_pack/M4_sequence_31
+  rotate: true
+  xy: 401, 26
+  size: 130, 146
+  orig: 220, 220
+  offset: 50, 59
+  index: -1
+sequence_pack/M4_sequence_32
+  rotate: true
+  xy: 549, 15
+  size: 129, 145
+  orig: 220, 220
+  offset: 49, 60
+  index: -1
+sequence_pack/M4_sequence_33
+  rotate: true
+  xy: 696, 14
+  size: 127, 143
+  orig: 220, 220
+  offset: 49, 61
+  index: -1
+sequence_pack/M4_sequence_34
+  rotate: true
+  xy: 841, 14
+  size: 127, 143
+  orig: 220, 220
+  offset: 49, 61
+  index: -1

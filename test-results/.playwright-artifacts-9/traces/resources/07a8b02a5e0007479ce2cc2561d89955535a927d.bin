@@ -1,0 +1,27 @@
+
+petals.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+petal_gold
+  rotate: false
+  xy: 158, 7
+  size: 77, 59
+  orig: 78, 65
+  offset: 0, 2
+  index: -1
+petal_gold_1
+  rotate: false
+  xy: 2, 2
+  size: 76, 64
+  orig: 78, 65
+  offset: 1, 0
+  index: -1
+petal_gold_squere
+  rotate: false
+  xy: 80, 2
+  size: 76, 64
+  orig: 78, 65
+  offset: 1, 0
+  index: -1

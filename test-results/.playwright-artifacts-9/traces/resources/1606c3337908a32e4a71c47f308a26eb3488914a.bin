@@ -1,0 +1,195 @@
+
+bull_and_truck.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 141
+  rotate: false
+  xy: 1950, 860
+  size: 75, 50
+  orig: 77, 52
+  offset: 1, 1
+  index: -1
+Smoke_25_00000
+  rotate: true
+  xy: 1441, 678
+  size: 144, 59
+  orig: 402, 231
+  offset: 256, 7
+  index: -1
+Smoke_25_00001
+  rotate: true
+  xy: 477, 482
+  size: 254, 154
+  orig: 402, 231
+  offset: 126, 3
+  index: -1
+Smoke_25_00002
+  rotate: false
+  xy: 1517, 639
+  size: 315, 184
+  orig: 402, 231
+  offset: 51, 5
+  index: -1
+Smoke_25_00003
+  rotate: false
+  xy: 633, 419
+  size: 333, 209
+  orig: 402, 231
+  offset: 20, 0
+  index: -1
+Smoke_25_00004
+  rotate: false
+  xy: 1012, 595
+  size: 305, 217
+  orig: 402, 231
+  offset: 10, 6
+  index: -1
+Smoke_25_00005
+  rotate: false
+  xy: 968, 372
+  size: 299, 221
+  orig: 402, 231
+  offset: 4, 8
+  index: -1
+Smoke_25_00006
+  rotate: false
+  xy: 1269, 370
+  size: 203, 223
+  orig: 402, 231
+  offset: 0, 7
+  index: -1
+Smoke_25_00007
+  rotate: false
+  xy: 1319, 601
+  size: 55, 221
+  orig: 402, 231
+  offset: 2, 9
+  index: -1
+bull_run_01
+  rotate: false
+  xy: 74, 554
+  size: 401, 182
+  orig: 401, 182
+  offset: 0, 0
+  index: -1
+bull_run_02
+  rotate: false
+  xy: 74, 186
+  size: 378, 182
+  orig: 401, 182
+  offset: 11, 0
+  index: -1
+bull_run_03
+  rotate: false
+  xy: 74, 2
+  size: 362, 182
+  orig: 401, 182
+  offset: 19, 0
+  index: -1
+bull_run_04
+  rotate: false
+  xy: 656, 630
+  size: 354, 182
+  orig: 401, 182
+  offset: 23, 0
+  index: -1
+bull_run_05
+  rotate: false
+  xy: 1157, 824
+  size: 358, 182
+  orig: 401, 182
+  offset: 21, 0
+  index: -1
+bull_run_06
+  rotate: false
+  xy: 1517, 825
+  size: 357, 181
+  orig: 401, 182
+  offset: 21, 0
+  index: -1
+bull_run_07
+  rotate: false
+  xy: 74, 370
+  size: 399, 182
+  orig: 401, 182
+  offset: 0, 0
+  index: -1
+bull_run_shadow
+  rotate: false
+  xy: 656, 814
+  size: 464, 45
+  orig: 486, 45
+  offset: 11, 0
+  index: -1
+front_a
+  rotate: false
+  xy: 1834, 666
+  size: 69, 157
+  orig: 71, 159
+  offset: 1, 1
+  index: -1
+hood
+  rotate: true
+  xy: 1876, 825
+  size: 181, 72
+  orig: 183, 74
+  offset: 1, 1
+  index: -1
+shadow
+  rotate: true
+  xy: 2, 16
+  size: 720, 70
+  orig: 722, 72
+  offset: 1, 1
+  index: -1
+tomato
+  rotate: false
+  xy: 1376, 612
+  size: 45, 45
+  orig: 45, 45
+  offset: 0, 0
+  index: -1
+tomato_shadow
+  rotate: true
+  xy: 1122, 814
+  size: 45, 22
+  orig: 45, 22
+  offset: 0, 0
+  index: -1
+truck
+  rotate: false
+  xy: 2, 738
+  size: 652, 268
+  orig: 654, 270
+  offset: 1, 1
+  index: -1
+truck_bg
+  rotate: false
+  xy: 656, 861
+  size: 499, 145
+  orig: 501, 147
+  offset: 1, 1
+  index: -1
+wheel_a
+  rotate: false
+  xy: 475, 385
+  size: 98, 95
+  orig: 100, 97
+  offset: 1, 1
+  index: -1
+wheel_b
+  rotate: false
+  xy: 1950, 912
+  size: 96, 94
+  orig: 98, 96
+  offset: 1, 1
+  index: -1
+wheel_hide
+  rotate: true
+  xy: 1376, 659
+  size: 163, 63
+  orig: 165, 65
+  offset: 1, 1
+  index: -1

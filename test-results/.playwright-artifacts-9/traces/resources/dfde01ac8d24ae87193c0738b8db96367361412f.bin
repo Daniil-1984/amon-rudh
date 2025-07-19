@@ -1,0 +1,90 @@
+
+bus_smoke.png
+size: 2048,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+smoke_00
+  rotate: true
+  xy: 1295, 148
+  size: 189, 53
+  orig: 502, 373
+  offset: 2, 151
+  index: -1
+smoke_01
+  rotate: false
+  xy: 605, 78
+  size: 306, 117
+  orig: 502, 373
+  offset: 58, 119
+  index: -1
+smoke_02
+  rotate: false
+  xy: 1738, 335
+  size: 297, 171
+  orig: 502, 373
+  offset: 105, 89
+  index: -1
+smoke_03
+  rotate: false
+  xy: 1009, 98
+  size: 286, 239
+  orig: 502, 373
+  offset: 152, 56
+  index: -1
+smoke_04
+  rotate: false
+  xy: 334, 41
+  size: 271, 269
+  orig: 502, 373
+  offset: 175, 43
+  index: -1
+smoke_05
+  rotate: false
+  xy: 0, 203
+  size: 288, 303
+  orig: 502, 373
+  offset: 175, 26
+  index: -1
+smoke_06
+  rotate: true
+  xy: 0, 0
+  size: 203, 334
+  orig: 502, 373
+  offset: 271, 9
+  index: -1
+smoke_07
+  rotate: true
+  xy: 288, 310
+  size: 196, 358
+  orig: 502, 373
+  offset: 286, 4
+  index: -1
+smoke_08
+  rotate: true
+  xy: 646, 325
+  size: 181, 363
+  orig: 502, 373
+  offset: 308, 2
+  index: -1
+smoke_09
+  rotate: true
+  xy: 1009, 337
+  size: 169, 369
+  orig: 502, 373
+  offset: 325, 4
+  index: -1
+smoke_10
+  rotate: true
+  xy: 1378, 346
+  size: 160, 360
+  orig: 502, 373
+  offset: 338, 10
+  index: -1
+smoke_11
+  rotate: true
+  xy: 646, 195
+  size: 130, 332
+  orig: 502, 373
+  offset: 372, 27
+  index: -1

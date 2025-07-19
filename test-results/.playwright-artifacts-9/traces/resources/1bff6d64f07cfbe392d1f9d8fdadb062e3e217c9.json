@@ -1,0 +1,350 @@
+{
+  "urls": [
+    "assets/desktop/sounds/sfxSprite.ogg",
+    "assets/desktop/sounds/sfxSprite.m4a",
+    "assets/desktop/sounds/sfxSprite.mp3",
+    "assets/desktop/sounds/sfxSprite.ac3"
+  ],
+  "sprite": {
+    "ambience_base_loop": [
+      0,
+      43750
+    ],
+    "anticipation": [
+      44250,
+      4216.666666666669
+    ],
+    "bus_section_bus_arrives": [
+      48966.66666666667,
+      2733.3333333333344
+    ],
+    "bus_section_bus_idle_ambience_loop": [
+      52200,
+      10600.000000000002
+    ],
+    "bus_section_bus_leaves": [
+      63300.00000000001,
+      4783.3333333333385
+    ],
+    "bus_section_gui_button_gamble_and_take_hover": [
+      68583.33333333334,
+      983.3333333333343
+    ],
+    "bus_section_gui_button_press": [
+      70066.66666666667,
+      983.3333333333343
+    ],
+    "bus_section_gui_search_loop": [
+      71550.00000000001,
+      2233.3333333333344
+    ],
+    "bus_section_gui_search_stinger": [
+      74283.33333333334,
+      3666.6666666666715
+    ],
+    "bus_section_gui_search_stop": [
+      78450.00000000001,
+      2299.9999999999973
+    ],
+    "bus_section_gui_unlock": [
+      81250.00000000001,
+      1500
+    ],
+    "buy_feature_buy": [
+      83250.00000000001,
+      2683.333333333337
+    ],
+    "buy_feature_close": [
+      86433.33333333336,
+      1383.3333333333399
+    ],
+    "buy_feature_hover": [
+      88316.66666666669,
+      2133.33333333334
+    ],
+    "buy_feature_open": [
+      90950.00000000003,
+      2466.666666666669
+    ],
+    "counter_layer_1_loop": [
+      93916.6666666667,
+      239.99999999999488
+    ],
+    "counter_layer_2_loop": [
+      94656.6666666667,
+      239.99999999999488
+    ],
+    "counter_stop": [
+      95396.66666666669,
+      1033.3333333333314
+    ],
+    "feedback_bonus_outro_ctc": [
+      96930.00000000001,
+      4099.9999999999945
+    ],
+    "feedback_bonus_outro_positive": [
+      101530.00000000001,
+      4283.333333333331
+    ],
+    "feedback_bonus_outro_zero": [
+      106313.33333333334,
+      1783.3333333333314
+    ],
+    "feedback_bonus_roses_congratulations": [
+      108596.66666666667,
+      3133.33333333334
+    ],
+    "idle_easter_egg_bull": [
+      112230.00000000001,
+      6549.999999999997
+    ],
+    "idle_easter_egg_bull_truck_chase": [
+      119280.00000000001,
+      4866.66666666666
+    ],
+    "random_feature_bulls": [
+      124646.66666666667,
+      5166.666666666657
+    ],
+    "random_feature_donkey_jumps": [
+      130313.33333333333,
+      2516.6666666666797
+    ],
+    "random_feature_donkey_land": [
+      133330,
+      800.0000000000114
+    ],
+    "random_feature_donkey_move_a": [
+      134630.00000000003,
+      1716.6666666666686
+    ],
+    "random_feature_donkey_move_b": [
+      136846.6666666667,
+      1733.33333333332
+    ],
+    "random_feature_donkey_multiplier_a": [
+      139080,
+      1166.6666666666572
+    ],
+    "random_feature_donkey_multiplier_b": [
+      140746.66666666666,
+      1083.3333333333428
+    ],
+    "random_feature_donkey_multiplier_c": [
+      142330,
+      1233.33333333332
+    ],
+    "random_feature_donkey_stallion_land_fountain_fireworks": [
+      144063.33333333334,
+      2000
+    ],
+    "random_feature_donkey_symbol_a": [
+      146563.33333333334,
+      1366.6666666666742
+    ],
+    "random_feature_donkey_symbol_b": [
+      148430,
+      1099.9999999999943
+    ],
+    "random_feature_stallion_jumps": [
+      150030,
+      2699.9999999999886
+    ],
+    "random_feature_stallion_land": [
+      153230,
+      1066.6666666666629
+    ],
+    "random_feature_stallion_move_a": [
+      154796.66666666666,
+      1699.9999999999886
+    ],
+    "random_feature_stallion_move_b": [
+      156996.66666666663,
+      1699.9999999999886
+    ],
+    "random_feature_stallion_multiplier_a": [
+      159196.66666666663,
+      1166.6666666666572
+    ],
+    "random_feature_stallion_multiplier_b": [
+      160863.33333333328,
+      1166.6666666666572
+    ],
+    "random_feature_stallion_multiplier_c": [
+      162529.99999999994,
+      1250
+    ],
+    "random_feature_stallion_symbol_a": [
+      164279.99999999994,
+      2233.3333333333203
+    ],
+    "random_feature_stallion_symbol_b": [
+      167013.33333333326,
+      2233.3333333333203
+    ],
+    "random_feature_tomatoes_impact_random_a": [
+      169746.6666666666,
+      750
+    ],
+    "random_feature_tomatoes_impact_random_b": [
+      170996.6666666666,
+      750
+    ],
+    "random_feature_tomatoes_impact_random_c": [
+      172246.6666666666,
+      750
+    ],
+    "random_feature_tomatoes_impact_random_d": [
+      173496.6666666666,
+      750
+    ],
+    "random_feature_tomatoes_impact_random_e": [
+      174746.6666666666,
+      750
+    ],
+    "random_feature_tomatoes_impact_random_f": [
+      175996.6666666666,
+      750
+    ],
+    "random_feature_tomatoes_start": [
+      177246.6666666666,
+      1966.6666666666686
+    ],
+    "random_feature_tomatoes_truck": [
+      179713.33333333326,
+      3816.666666666663
+    ],
+    "reel_base_loop": [
+      184029.9999999999,
+      2949.9999999999886
+    ],
+    "reel_base_start_a": [
+      187479.9999999999,
+      1800.0000000000114
+    ],
+    "reel_base_start_b": [
+      189779.9999999999,
+      1800.0000000000114
+    ],
+    "reel_base_start_c": [
+      192079.99999999994,
+      1800.0000000000114
+    ],
+    "reel_base_stop_last_a": [
+      194379.99999999994,
+      866.6666666666742
+    ],
+    "reel_base_stop_last_b": [
+      195746.6666666666,
+      866.6666666666742
+    ],
+    "reel_base_stop_last_c": [
+      197113.33333333328,
+      866.6666666666742
+    ],
+    "reel_base_stop_random_a": [
+      198479.99999999997,
+      733.3333333333201
+    ],
+    "reel_base_stop_random_b": [
+      199713.33333333328,
+      733.3333333333201
+    ],
+    "reel_base_stop_random_c": [
+      200946.6666666666,
+      733.3333333333201
+    ],
+    "reel_base_stop_random_d": [
+      202179.9999999999,
+      733.3333333333201
+    ],
+    "symbol_bonus": [
+      203413.33333333326,
+      3016.6666666666797
+    ],
+    "symbol_bonus_land_1": [
+      206929.9999999999,
+      1800.0000000000114
+    ],
+    "symbol_bonus_land_2": [
+      209229.99999999994,
+      1916.6666666666572
+    ],
+    "symbol_bonus_land_3": [
+      211646.6666666666,
+      2083.333333333343
+    ],
+    "symbol_H1": [
+      214229.99999999994,
+      3066.666666666663
+    ],
+    "symbol_H2": [
+      217796.6666666666,
+      2366.6666666666742
+    ],
+    "symbol_L_a": [
+      220663.33333333326,
+      2800.0000000000114
+    ],
+    "symbol_L_b": [
+      223963.33333333328,
+      2800.0000000000114
+    ],
+    "symbol_L_c": [
+      227263.33333333328,
+      2800.0000000000114
+    ],
+    "symbol_M3": [
+      230563.3333333333,
+      2199.9999999999886
+    ],
+    "symbol_M4": [
+      233263.33333333328,
+      2533.333333333331
+    ],
+    "symbol_rose_a": [
+      236296.66666666663,
+      1866.6666666666742
+    ],
+    "symbol_rose_b": [
+      238663.33333333328,
+      1866.6666666666742
+    ],
+    "symbol_rose_number_hit": [
+      241029.99999999997,
+      1416.6666666666572
+    ],
+    "symbol_WR": [
+      242946.66666666663,
+      2199.9999999999886
+    ],
+    "symbol_WR_random_feature": [
+      245646.66666666663,
+      2150.0000000000055
+    ],
+    "big_win": [
+      248296.66666666663,
+      3800.0000000000114
+    ],
+    "epic_win": [
+      252596.66666666663,
+      2900.0000000000055
+    ],
+    "epic_win_fireworks_loop": [
+      255996.66666666663,
+      3520.00000000001
+    ],
+    "win_fountain_firecrackers_loop": [
+      260016.66666666666,
+      4116.394557823128
+    ],
+    "mega_win": [
+      264633.06122448976,
+      3800.0000000000114
+    ],
+    "normal_win": [
+      268933.06122448976,
+      3383.3333333333258
+    ]
+  }
+}

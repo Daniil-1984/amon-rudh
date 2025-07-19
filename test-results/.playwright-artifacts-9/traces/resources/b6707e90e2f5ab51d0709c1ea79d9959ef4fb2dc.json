@@ -1,0 +1,5 @@
+{
+  "priority": -1,
+  "fonts": ["defaultFont", "defaultBold", "defaultItalic"],
+  "translations": ["apexTournaments"]
+}

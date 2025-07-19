@@ -1,0 +1,195 @@
+
+fireworks.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Flare_06
+  rotate: true
+  xy: 1795, 527
+  size: 241, 251
+  orig: 300, 300
+  offset: 27, 28
+  index: -1
+Flare_08
+  rotate: false
+  xy: 1358, 489
+  size: 238, 248
+  orig: 300, 300
+  offset: 29, 31
+  index: -1
+Flare_10
+  rotate: false
+  xy: 839, 224
+  size: 242, 245
+  orig: 300, 300
+  offset: 26, 37
+  index: -1
+Flare_12
+  rotate: false
+  xy: 861, 480
+  size: 246, 250
+  orig: 300, 300
+  offset: 24, 33
+  index: -1
+Flare_14
+  rotate: true
+  xy: 1795, 770
+  size: 246, 251
+  orig: 300, 300
+  offset: 24, 32
+  index: -1
+Flare_16
+  rotate: false
+  xy: 1109, 484
+  size: 247, 250
+  orig: 300, 300
+  offset: 23, 32
+  index: -1
+firework_exposion_02
+  rotate: false
+  xy: 2, 44
+  size: 58, 58
+  orig: 700, 529
+  offset: 324, 246
+  index: -1
+firework_exposion_03
+  rotate: false
+  xy: 1786, 270
+  size: 110, 110
+  orig: 700, 529
+  offset: 298, 219
+  index: -1
+firework_exposion_04
+  rotate: false
+  xy: 1786, 382
+  size: 146, 143
+  orig: 700, 529
+  offset: 280, 201
+  index: -1
+firework_exposion_05
+  rotate: false
+  xy: 300, 25
+  size: 169, 165
+  orig: 700, 529
+  offset: 268, 189
+  index: -1
+firework_exposion_07
+  rotate: false
+  xy: 839, 2
+  size: 227, 220
+  orig: 700, 529
+  offset: 239, 161
+  index: -1
+firework_exposion_09
+  rotate: true
+  xy: 612, 471
+  size: 257, 247
+  orig: 700, 529
+  offset: 224, 144
+  index: -1
+firework_exposion_11
+  rotate: true
+  xy: 577, 186
+  size: 270, 260
+  orig: 700, 529
+  offset: 217, 134
+  index: -1
+firework_exposion_13
+  rotate: false
+  xy: 300, 192
+  size: 275, 264
+  orig: 700, 529
+  offset: 215, 130
+  index: -1
+firework_exposion_15
+  rotate: false
+  xy: 328, 458
+  size: 282, 270
+  orig: 700, 529
+  offset: 211, 125
+  index: -1
+firework_exposion_17
+  rotate: false
+  xy: 1507, 742
+  size: 286, 274
+  orig: 700, 529
+  offset: 209, 121
+  index: -1
+firework_exposion_19
+  rotate: false
+  xy: 1216, 739
+  size: 289, 277
+  orig: 700, 529
+  offset: 208, 118
+  index: -1
+firework_exposion_21
+  rotate: false
+  xy: 922, 736
+  size: 292, 280
+  orig: 700, 529
+  offset: 206, 114
+  index: -1
+firework_exposion_25
+  rotate: false
+  xy: 626, 732
+  size: 294, 284
+  orig: 700, 529
+  offset: 205, 108
+  index: -1
+firework_exposion_27
+  rotate: false
+  xy: 2, 389
+  size: 296, 286
+  orig: 700, 529
+  offset: 204, 105
+  index: -1
+firework_exposion_29
+  rotate: false
+  xy: 328, 730
+  size: 296, 286
+  orig: 700, 529
+  offset: 204, 103
+  index: -1
+firework_exposion_31
+  rotate: false
+  xy: 2, 104
+  size: 296, 283
+  orig: 700, 529
+  offset: 204, 104
+  index: -1
+firework_exposion_33
+  rotate: true
+  xy: 1083, 240
+  size: 238, 235
+  orig: 700, 529
+  offset: 233, 119
+  index: -1
+firework_exposion_35
+  rotate: true
+  xy: 1320, 244
+  size: 238, 232
+  orig: 700, 529
+  offset: 233, 119
+  index: -1
+firework_exposion_37
+  rotate: true
+  xy: 1554, 249
+  size: 238, 230
+  orig: 700, 529
+  offset: 233, 119
+  index: -1
+firework_exposion_39
+  rotate: false
+  xy: 1598, 568
+  size: 175, 172
+  orig: 700, 529
+  offset: 264, 154
+  index: -1
+odsjaj
+  rotate: false
+  xy: 2, 677
+  size: 324, 339
+  orig: 496, 469
+  offset: 70, 91
+  index: -1

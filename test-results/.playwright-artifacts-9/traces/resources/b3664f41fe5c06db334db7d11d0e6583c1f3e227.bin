@@ -1,0 +1,153 @@
+
+counters_stallion.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 462, 44
+  size: 1, 1
+  orig: 42, 74
+  offset: 22, 38
+  index: -1
+1_shadow
+  rotate: false
+  xy: 462, 44
+  size: 1, 1
+  orig: 42, 74
+  offset: 23, 43
+  index: -1
+ekser-civija_l
+  rotate: false
+  xy: 2, 17
+  size: 19, 20
+  orig: 21, 22
+  offset: 1, 1
+  index: -1
+ekser-civija_l_shadow
+  rotate: false
+  xy: 462, 47
+  size: 19, 20
+  orig: 21, 22
+  offset: 1, 1
+  index: -1
+ekser_civija_d
+  rotate: false
+  xy: 523, 138
+  size: 20, 18
+  orig: 22, 20
+  offset: 1, 1
+  index: -1
+ekser_civija_d_shadow
+  rotate: false
+  xy: 650, 235
+  size: 15, 19
+  orig: 17, 21
+  offset: 1, 1
+  index: -1
+ekser_d
+  rotate: true
+  xy: 2, 2
+  size: 13, 18
+  orig: 15, 20
+  offset: 1, 1
+  index: -1
+ekser_d_shadow
+  rotate: false
+  xy: 23, 2
+  size: 17, 15
+  orig: 19, 17
+  offset: 1, 1
+  index: -1
+ekser_l
+  rotate: false
+  xy: 23, 19
+  size: 16, 18
+  orig: 18, 20
+  offset: 1, 1
+  index: -1
+ekser_l_shedow
+  rotate: false
+  xy: 586, 169
+  size: 20, 15
+  orig: 22, 17
+  offset: 1, 1
+  index: -1
+free_spins_shadow
+  rotate: false
+  xy: 483, 66
+  size: 1, 1
+  orig: 940, 234
+  offset: 327, 120
+  index: -1
+free_spins_text
+  rotate: false
+  xy: 483, 66
+  size: 1, 1
+  orig: 940, 234
+  offset: 327, 120
+  index: -1
+horseshoe_01
+  rotate: false
+  xy: 523, 158
+  size: 61, 68
+  orig: 63, 70
+  offset: 1, 1
+  index: -1
+horseshoe_01_shadow
+  rotate: false
+  xy: 586, 186
+  size: 62, 68
+  orig: 64, 70
+  offset: 1, 1
+  index: -1
+horseshoe_02
+  rotate: true
+  xy: 314, 2
+  size: 65, 72
+  orig: 67, 74
+  offset: 1, 1
+  index: -1
+horseshoe_02 shadow
+  rotate: true
+  xy: 388, 2
+  size: 65, 72
+  orig: 67, 74
+  offset: 1, 1
+  index: -1
+tabla_bulls
+  rotate: false
+  xy: 2, 71
+  size: 322, 183
+  orig: 324, 185
+  offset: 1, 1
+  index: -1
+tabla_bulls_desno
+  rotate: true
+  xy: 326, 139
+  size: 87, 195
+  orig: 89, 197
+  offset: 1, 1
+  index: -1
+tabla_bulls_dole
+  rotate: false
+  xy: 2, 39
+  size: 310, 30
+  orig: 312, 32
+  offset: 1, 1
+  index: -1
+tabla_bulls_gore
+  rotate: false
+  xy: 326, 228
+  size: 258, 26
+  orig: 260, 28
+  offset: 1, 1
+  index: -1
+tabla_bulls_levo
+  rotate: true
+  xy: 326, 69
+  size: 68, 195
+  orig: 70, 197
+  offset: 1, 1
+  index: -1

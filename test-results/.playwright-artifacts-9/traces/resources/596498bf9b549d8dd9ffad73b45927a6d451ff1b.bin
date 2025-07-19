@@ -1,0 +1,13 @@
+
+take.png
+size: 16,16
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+take
+  rotate: false
+  xy: 2, 2
+  size: 4, 4
+  orig: 330, 156
+  offset: 164, 86
+  index: -1

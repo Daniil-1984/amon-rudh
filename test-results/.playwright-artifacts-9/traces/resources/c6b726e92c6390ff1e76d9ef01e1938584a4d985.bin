@@ -1,0 +1,489 @@
+
+SC_BULL.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BG_Bonus
+  rotate: false
+  xy: 1227, 622
+  size: 220, 220
+  orig: 220, 220
+  offset: 0, 0
+  index: -1
+SC_BULL_00
+  rotate: false
+  xy: 1465, 817
+  size: 220, 220
+  orig: 220, 220
+  offset: 0, 0
+  index: -1
+SC_BULL_b
+  rotate: false
+  xy: 1449, 595
+  size: 220, 220
+  orig: 220, 220
+  offset: 0, 0
+  index: -1
+bull_body
+  rotate: true
+  xy: 1801, 292
+  size: 130, 143
+  orig: 132, 145
+  offset: 1, 1
+  index: -1
+sequence_pack/SC_BULL_optimize_00
+  rotate: true
+  xy: 1622, 400
+  size: 193, 177
+  orig: 660, 500
+  offset: 238, 140
+  index: -1
+sequence_pack/SC_BULL_optimize_01
+  rotate: true
+  xy: 1871, 675
+  size: 188, 174
+  orig: 660, 500
+  offset: 238, 140
+  index: -1
+sequence_pack/SC_BULL_optimize_02
+  rotate: true
+  xy: 189, 572
+  size: 183, 168
+  orig: 660, 500
+  offset: 240, 140
+  index: -1
+sequence_pack/SC_BULL_optimize_03
+  rotate: false
+  xy: 1687, 817
+  size: 182, 163
+  orig: 660, 500
+  offset: 243, 137
+  index: -1
+sequence_pack/SC_BULL_optimize_04
+  rotate: false
+  xy: 375, 278
+  size: 182, 158
+  orig: 660, 500
+  offset: 245, 135
+  index: -1
+sequence_pack/SC_BULL_optimize_05
+  rotate: false
+  xy: 288, 122
+  size: 174, 154
+  orig: 660, 500
+  offset: 247, 134
+  index: -1
+sequence_pack/SC_BULL_optimize_06
+  rotate: false
+  xy: 1871, 865
+  size: 175, 158
+  orig: 660, 500
+  offset: 248, 133
+  index: -1
+sequence_pack/SC_BULL_optimize_07
+  rotate: true
+  xy: 375, 438
+  size: 181, 164
+  orig: 660, 500
+  offset: 248, 133
+  index: -1
+sequence_pack/SC_BULL_optimize_08
+  rotate: true
+  xy: 1687, 1177
+  size: 190, 172
+  orig: 660, 500
+  offset: 248, 132
+  index: -1
+sequence_pack/SC_BULL_optimize_09
+  rotate: false
+  xy: 1423, 409
+  size: 197, 184
+  orig: 660, 500
+  offset: 248, 132
+  index: -1
+sequence_pack/SC_BULL_optimize_10
+  rotate: false
+  xy: 1214, 422
+  size: 207, 198
+  orig: 660, 500
+  offset: 246, 130
+  index: -1
+sequence_pack/SC_BULL_optimize_11
+  rotate: false
+  xy: 995, 472
+  size: 217, 211
+  orig: 660, 500
+  offset: 243, 128
+  index: -1
+sequence_pack/SC_BULL_optimize_12
+  rotate: false
+  xy: 995, 685
+  size: 230, 222
+  orig: 660, 500
+  offset: 240, 125
+  index: -1
+sequence_pack/SC_BULL_optimize_13
+  rotate: false
+  xy: 1055, 1130
+  size: 271, 232
+  orig: 660, 500
+  offset: 237, 123
+  index: -1
+sequence_pack/SC_BULL_optimize_14
+  rotate: false
+  xy: 1747, 1798
+  size: 286, 244
+  orig: 660, 500
+  offset: 235, 121
+  index: -1
+sequence_pack/SC_BULL_optimize_15
+  rotate: false
+  xy: 577, 1210
+  size: 274, 274
+  orig: 660, 500
+  offset: 235, 121
+  index: -1
+sequence_pack/SC_BULL_optimize_16
+  rotate: false
+  xy: 1055, 1364
+  size: 253, 274
+  orig: 660, 500
+  offset: 235, 121
+  index: -1
+sequence_pack/SC_BULL_optimize_17
+  rotate: true
+  xy: 2, 2
+  size: 318, 284
+  orig: 660, 500
+  offset: 235, 122
+  index: -1
+sequence_pack/SC_BULL_optimize_18
+  rotate: true
+  xy: 577, 1486
+  size: 355, 261
+  orig: 660, 500
+  offset: 235, 123
+  index: -1
+sequence_pack/SC_BULL_optimize_19
+  rotate: true
+  xy: 740, 871
+  size: 337, 235
+  orig: 660, 500
+  offset: 236, 124
+  index: -1
+sequence_pack/SC_BULL_optimize_20
+  rotate: false
+  xy: 1729, 1569
+  size: 315, 227
+  orig: 660, 500
+  offset: 236, 126
+  index: -1
+sequence_pack/SC_BULL_optimize_21
+  rotate: false
+  xy: 1310, 1461
+  size: 286, 222
+  orig: 660, 500
+  offset: 237, 128
+  index: -1
+sequence_pack/SC_BULL_optimize_22
+  rotate: false
+  xy: 977, 909
+  size: 263, 219
+  orig: 660, 500
+  offset: 238, 129
+  index: -1
+sequence_pack/SC_BULL_optimize_23
+  rotate: false
+  xy: 740, 654
+  size: 253, 215
+  orig: 660, 500
+  offset: 239, 131
+  index: -1
+sequence_pack/SC_BULL_optimize_24
+  rotate: false
+  xy: 1328, 1248
+  size: 259, 211
+  orig: 660, 500
+  offset: 239, 133
+  index: -1
+sequence_pack/SC_BULL_optimize_25
+  rotate: false
+  xy: 1328, 1039
+  size: 262, 207
+  orig: 660, 500
+  offset: 240, 134
+  index: -1
+sequence_pack/SC_BULL_optimize_26
+  rotate: false
+  xy: 1048, 1640
+  size: 260, 202
+  orig: 660, 500
+  offset: 241, 136
+  index: -1
+sequence_pack/SC_BULL_optimize_27
+  rotate: false
+  xy: 1726, 1369
+  size: 245, 198
+  orig: 660, 500
+  offset: 242, 137
+  index: -1
+sequence_pack/SC_BULL_optimize_28
+  rotate: false
+  xy: 1242, 844
+  size: 221, 193
+  orig: 660, 500
+  offset: 243, 138
+  index: -1
+sequence_pack/SC_BULL_optimize_29
+  rotate: true
+  xy: 1671, 619
+  size: 196, 188
+  orig: 660, 500
+  offset: 242, 139
+  index: -1
+sequence_pack/SC_BULL_optimize_30
+  rotate: true
+  xy: 189, 383
+  size: 187, 184
+  orig: 660, 500
+  offset: 240, 140
+  index: -1
+sequence_pack/SC_BULL_optimize_31
+  rotate: true
+  xy: 1866, 1025
+  size: 188, 180
+  orig: 660, 500
+  offset: 238, 140
+  index: -1
+sequence_pack/SC_BULL_optimize_32
+  rotate: false
+  xy: 359, 621
+  size: 189, 178
+  orig: 660, 500
+  offset: 238, 140
+  index: -1
+sequence_pack/SC_BULL_optimize_33
+  rotate: true
+  xy: 1801, 424
+  size: 193, 177
+  orig: 660, 500
+  offset: 238, 140
+  index: -1
+sequence_pack/SC_BULL_optimize_34
+  rotate: true
+  xy: 1687, 982
+  size: 193, 177
+  orig: 660, 500
+  offset: 238, 140
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_15
+  rotate: true
+  xy: 1861, 619
+  size: 54, 92
+  orig: 760, 520
+  offset: 399, 110
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_16
+  rotate: false
+  xy: 1242, 1039
+  size: 51, 89
+  orig: 760, 520
+  offset: 402, 115
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_17
+  rotate: true
+  xy: 288, 11
+  size: 109, 145
+  orig: 760, 520
+  offset: 335, 36
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_18
+  rotate: false
+  xy: 1598, 1369
+  size: 108, 143
+  orig: 760, 520
+  offset: 336, 41
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_19
+  rotate: false
+  xy: 541, 476
+  size: 108, 143
+  orig: 760, 520
+  offset: 321, 22
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_20
+  rotate: false
+  xy: 559, 333
+  size: 107, 141
+  orig: 760, 520
+  offset: 322, 27
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_21
+  rotate: true
+  xy: 840, 1526
+  size: 315, 206
+  orig: 760, 520
+  offset: 306, 16
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_22
+  rotate: true
+  xy: 853, 1212
+  size: 312, 200
+  orig: 760, 520
+  offset: 307, 20
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_23
+  rotate: true
+  xy: 359, 801
+  size: 396, 191
+  orig: 760, 520
+  offset: 295, 19
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_24
+  rotate: true
+  xy: 552, 808
+  size: 389, 186
+  orig: 760, 520
+  offset: 297, 23
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_25
+  rotate: false
+  xy: 1310, 1685
+  size: 417, 171
+  orig: 760, 520
+  offset: 289, 23
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_26
+  rotate: true
+  xy: 191, 781
+  size: 413, 166
+  orig: 760, 520
+  offset: 291, 28
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_27
+  rotate: false
+  xy: 1310, 1858
+  size: 435, 184
+  orig: 760, 520
+  offset: 281, 24
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_28
+  rotate: true
+  xy: 394, 1199
+  size: 431, 181
+  orig: 760, 520
+  offset: 283, 29
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_29
+  rotate: true
+  xy: 2, 757
+  size: 437, 187
+  orig: 760, 520
+  offset: 280, 30
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_30
+  rotate: true
+  xy: 2, 322
+  size: 433, 185
+  orig: 760, 520
+  offset: 281, 35
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_31
+  rotate: true
+  xy: 2, 1196
+  size: 434, 195
+  orig: 760, 520
+  offset: 282, 32
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_32
+  rotate: true
+  xy: 199, 1201
+  size: 429, 193
+  orig: 760, 520
+  offset: 284, 37
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_33
+  rotate: false
+  xy: 443, 1843
+  size: 434, 199
+  orig: 760, 520
+  offset: 283, 39
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_34
+  rotate: false
+  xy: 879, 1844
+  size: 429, 198
+  orig: 760, 520
+  offset: 285, 44
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_35
+  rotate: false
+  xy: 2, 1632
+  size: 432, 205
+  orig: 760, 520
+  offset: 286, 41
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_36
+  rotate: false
+  xy: 2, 1632
+  size: 432, 205
+  orig: 760, 520
+  offset: 286, 41
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_37
+  rotate: false
+  xy: 2, 1839
+  size: 439, 203
+  orig: 760, 520
+  offset: 286, 40
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_38
+  rotate: false
+  xy: 2, 1839
+  size: 439, 203
+  orig: 760, 520
+  offset: 286, 40
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_39
+  rotate: true
+  xy: 1861, 1215
+  size: 152, 185
+  orig: 760, 520
+  offset: 576, 61
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_40
+  rotate: true
+  xy: 1861, 1215
+  size: 152, 185
+  orig: 760, 520
+  offset: 576, 61
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_41
+  rotate: false
+  xy: 464, 98
+  size: 150, 178
+  orig: 760, 520
+  offset: 580, 62
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_42
+  rotate: false
+  xy: 464, 98
+  size: 150, 178
+  orig: 760, 520
+  offset: 580, 62
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_43
+  rotate: false
+  xy: 1598, 1514
+  size: 126, 169
+  orig: 760, 520
+  offset: 605, 63
+  index: -1
+sequence_pack/SC_BULL_smoke_rend_44
+  rotate: false
+  xy: 1598, 1514
+  size: 126, 169
+  orig: 760, 520
+  offset: 605, 63
+  index: -1

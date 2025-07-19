@@ -1,0 +1,132 @@
+
+jumping_bulls.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+frametoppart
+  rotate: false
+  xy: 663, 527
+  size: 220, 70
+  orig: 220, 70
+  offset: 0, 0
+  index: -1
+frametoppart_blur
+  rotate: false
+  xy: 207, 51
+  size: 220, 84
+  orig: 220, 84
+  offset: 0, 0
+  index: -1
+smoke_00
+  rotate: false
+  xy: 478, 152
+  size: 189, 53
+  orig: 502, 373
+  offset: 2, 151
+  index: -1
+smoke_01
+  rotate: false
+  xy: 292, 701
+  size: 306, 117
+  orig: 502, 373
+  offset: 58, 119
+  index: -1
+smoke_02
+  rotate: false
+  xy: 1724, 830
+  size: 297, 171
+  orig: 502, 373
+  offset: 105, 89
+  index: -1
+smoke_03
+  rotate: true
+  xy: 200, 410
+  size: 286, 239
+  orig: 502, 373
+  offset: 152, 56
+  index: -1
+smoke_04
+  rotate: true
+  xy: 207, 137
+  size: 271, 269
+  orig: 502, 373
+  offset: 175, 43
+  index: -1
+smoke_05
+  rotate: false
+  xy: 2, 698
+  size: 288, 303
+  orig: 502, 373
+  offset: 175, 26
+  index: -1
+smoke_06
+  rotate: false
+  xy: 2, 2
+  size: 203, 334
+  orig: 502, 373
+  offset: 271, 9
+  index: -1
+smoke_07
+  rotate: false
+  xy: 2, 338
+  size: 196, 358
+  orig: 502, 373
+  offset: 286, 4
+  index: -1
+smoke_08
+  rotate: true
+  xy: 292, 820
+  size: 181, 363
+  orig: 502, 373
+  offset: 308, 2
+  index: -1
+smoke_09
+  rotate: true
+  xy: 657, 832
+  size: 169, 369
+  orig: 502, 373
+  offset: 325, 4
+  index: -1
+smoke_10
+  rotate: true
+  xy: 1028, 841
+  size: 160, 360
+  orig: 502, 373
+  offset: 338, 10
+  index: -1
+smoke_11
+  rotate: true
+  xy: 1390, 871
+  size: 130, 332
+  orig: 502, 373
+  offset: 372, 27
+  index: -1
+symbol
+  rotate: false
+  xy: 885, 604
+  size: 220, 226
+  orig: 220, 226
+  offset: 0, 0
+  index: -1
+symbol_blur_1
+  rotate: false
+  xy: 663, 599
+  size: 220, 231
+  orig: 220, 249
+  offset: 0, 10
+  index: -1
+symbol_blur_2
+  rotate: false
+  xy: 478, 207
+  size: 220, 241
+  orig: 220, 249
+  offset: 0, 5
+  index: -1
+symbol_blur_3
+  rotate: false
+  xy: 441, 450
+  size: 220, 249
+  orig: 220, 249
+  offset: 0, 0
+  index: -1

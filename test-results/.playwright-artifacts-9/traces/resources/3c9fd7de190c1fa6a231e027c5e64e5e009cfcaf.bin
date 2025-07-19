@@ -1,0 +1,286 @@
+
+WR-TOMATO.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+WR-TOMATO_00
+  rotate: false
+  xy: 974, 1479
+  size: 210, 203
+  orig: 420, 420
+  offset: 105, 109
+  index: -1
+WR-TOMATO_01
+  rotate: false
+  xy: 459, 2
+  size: 193, 186
+  orig: 420, 420
+  offset: 113, 117
+  index: -1
+WR-TOMATO_02
+  rotate: true
+  xy: 546, 1140
+  size: 175, 168
+  orig: 420, 420
+  offset: 122, 125
+  index: -1
+WR-TOMATO_03
+  rotate: false
+  xy: 375, 1316
+  size: 157, 151
+  orig: 420, 420
+  offset: 131, 133
+  index: -1
+WR-TOMATO_04
+  rotate: false
+  xy: 534, 1317
+  size: 155, 150
+  orig: 420, 420
+  offset: 132, 133
+  index: -1
+WR-TOMATO_05
+  rotate: true
+  xy: 1886, 1812
+  size: 163, 158
+  orig: 420, 420
+  offset: 128, 130
+  index: -1
+WR-TOMATO_06
+  rotate: false
+  xy: 691, 1321
+  size: 171, 165
+  orig: 420, 420
+  offset: 124, 127
+  index: -1
+WR-TOMATO_07
+  rotate: true
+  xy: 716, 1152
+  size: 167, 162
+  orig: 420, 420
+  offset: 126, 128
+  index: -1
+WR-TOMATO_08
+  rotate: false
+  xy: 601, 1519
+  size: 141, 136
+  orig: 420, 420
+  offset: 139, 140
+  index: -1
+WR-TOMATO_09
+  rotate: false
+  xy: 546, 1013
+  size: 150, 125
+  orig: 420, 420
+  offset: 136, 150
+  index: -1
+WR-TOMATO_10
+  rotate: true
+  xy: 474, 190
+  size: 204, 167
+  orig: 420, 420
+  offset: 108, 133
+  index: -1
+WR-TOMATO_11
+  rotate: false
+  xy: 2, 248
+  size: 246, 207
+  orig: 420, 420
+  offset: 86, 115
+  index: -1
+WR-TOMATO_12
+  rotate: false
+  xy: 2, 457
+  size: 293, 252
+  orig: 420, 420
+  offset: 62, 95
+  index: -1
+WR-TOMATO_13
+  rotate: false
+  xy: 2, 1010
+  size: 346, 302
+  orig: 420, 420
+  offset: 35, 73
+  index: -1
+WR-TOMATO_14
+  rotate: false
+  xy: 2, 1314
+  size: 371, 325
+  orig: 420, 420
+  offset: 22, 63
+  index: -1
+WR-TOMATO_15
+  rotate: false
+  xy: 2, 1641
+  size: 381, 334
+  orig: 420, 420
+  offset: 17, 60
+  index: -1
+WR-TOMATO_16
+  rotate: false
+  xy: 385, 1657
+  size: 363, 318
+  orig: 420, 420
+  offset: 25, 67
+  index: -1
+WR-TOMATO_17
+  rotate: false
+  xy: 750, 1684
+  size: 331, 291
+  orig: 420, 420
+  offset: 39, 78
+  index: -1
+WR-TOMATO_18
+  rotate: false
+  xy: 1083, 1699
+  size: 301, 276
+  orig: 420, 420
+  offset: 53, 77
+  index: -1
+WR-TOMATO_19
+  rotate: false
+  xy: 2, 711
+  size: 309, 297
+  orig: 420, 420
+  offset: 53, 64
+  index: -1
+WR-TOMATO_20
+  rotate: false
+  xy: 1386, 1758
+  size: 254, 217
+  orig: 420, 420
+  offset: 79, 108
+  index: -1
+WR-TOMATO_21
+  rotate: false
+  xy: 1642, 1774
+  size: 242, 201
+  orig: 420, 420
+  offset: 89, 115
+  index: -1
+WR-TOMATO_22
+  rotate: false
+  xy: 2, 52
+  size: 231, 194
+  orig: 420, 420
+  offset: 95, 119
+  index: -1
+WR-TOMATO_23
+  rotate: false
+  xy: 1642, 1586
+  size: 218, 186
+  orig: 420, 420
+  offset: 102, 124
+  index: -1
+WR-TOMATO_24
+  rotate: false
+  xy: 385, 1469
+  size: 214, 186
+  orig: 420, 420
+  offset: 103, 124
+  index: -1
+WR-TOMATO_25
+  rotate: false
+  xy: 654, 11
+  size: 216, 189
+  orig: 420, 420
+  offset: 102, 122
+  index: -1
+WR-TOMATO_26
+  rotate: false
+  xy: 643, 202
+  size: 220, 192
+  orig: 420, 420
+  offset: 100, 121
+  index: -1
+WR-TOMATO_27
+  rotate: false
+  xy: 1386, 1562
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_28
+  rotate: true
+  xy: 313, 786
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_29
+  rotate: false
+  xy: 297, 396
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_30
+  rotate: false
+  xy: 250, 200
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_31
+  rotate: false
+  xy: 235, 4
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_32
+  rotate: false
+  xy: 750, 1488
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_33
+  rotate: true
+  xy: 1186, 1475
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_34
+  rotate: false
+  xy: 1382, 1366
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_35
+  rotate: true
+  xy: 350, 1090
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_36
+  rotate: false
+  xy: 521, 396
+  size: 222, 194
+  orig: 420, 420
+  offset: 99, 120
+  index: -1
+WR-TOMATO_39
+  rotate: false
+  xy: 313, 592
+  size: 220, 192
+  orig: 420, 420
+  offset: 100, 121
+  index: -1
+WR-TOMATO_37
+  rotate: false
+  xy: 313, 592
+  size: 220, 192
+  orig: 420, 420
+  offset: 100, 121
+  index: -1
+WR-TOMATO_38
+  rotate: false
+  xy: 313, 592
+  size: 220, 192
+  orig: 420, 420
+  offset: 100, 121
+  index: -1

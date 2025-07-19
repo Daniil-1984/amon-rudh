@@ -1,0 +1,194 @@
+
+bus.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+auspuh
+  rotate: true
+  xy: 1979, 65
+  size: 66, 64
+  orig: 68, 66
+  offset: 1, 1
+  index: -1
+auspuh_1
+  rotate: true
+  xy: 1979, 4
+  size: 61, 48
+  orig: 63, 50
+  offset: 1, 1
+  index: -1
+bus
+  rotate: false
+  xy: 0, 768
+  size: 2044, 1273
+  orig: 2046, 1275
+  offset: 1, 1
+  index: -1
+door_left
+  rotate: true
+  xy: 1116, 315
+  size: 160, 870
+  orig: 162, 872
+  offset: 1, 1
+  index: -1
+fiesta_lights
+  rotate: true
+  xy: 398, 19
+  size: 112, 222
+  orig: 114, 224
+  offset: 1, 1
+  index: -1
+frame_window
+  rotate: false
+  xy: 0, 131
+  size: 1116, 637
+  orig: 1118, 639
+  offset: 1, 1
+  index: -1
+handle
+  rotate: true
+  xy: 1837, 173
+  size: 142, 77
+  orig: 144, 79
+  offset: 1, 1
+  index: -1
+handle_shadow
+  rotate: false
+  xy: 1837, 15
+  size: 142, 116
+  orig: 144, 118
+  offset: 1, 1
+  index: -1
+indoors
+  rotate: true
+  xy: 1116, 475
+  size: 293, 885
+  orig: 295, 887
+  offset: 1, 1
+  index: -1
+mirror_a
+  rotate: true
+  xy: 620, 28
+  size: 103, 386
+  orig: 105, 388
+  offset: 1, 1
+  index: -1
+mirror_b
+  rotate: false
+  xy: 1755, 14
+  size: 82, 301
+  orig: 84, 303
+  offset: 1, 1
+  index: -1
+rearview_shadow
+  rotate: true
+  xy: 0, 9
+  size: 122, 398
+  orig: 124, 400
+  offset: 1, 1
+  index: -1
+rubber_window
+  rotate: false
+  xy: 2001, 131
+  size: 17, 637
+  orig: 19, 639
+  offset: 1, 1
+  index: -1
+window_bg
+  rotate: false
+  xy: 2044, 2040
+  size: 1, 1
+  orig: 1118, 639
+  offset: 0, 638
+  index: -1
+window_c
+  rotate: true
+  xy: 1116, 0
+  size: 315, 639
+  orig: 315, 639
+  offset: 0, 0
+  index: -1
+
+bus2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Wheel_prednji
+  rotate: false
+  xy: 0, 0
+  size: 176, 176
+  orig: 178, 178
+  offset: 1, 1
+  index: -1
+bus_back
+  rotate: false
+  xy: 312, 232
+  size: 364, 1211
+  orig: 371, 1229
+  offset: 7, 1
+  index: -1
+bus_front
+  rotate: false
+  xy: 0, 176
+  size: 312, 1267
+  orig: 313, 1277
+  offset: 0, 10
+  index: -1
+door_right
+  rotate: false
+  xy: 838, 573
+  size: 141, 870
+  orig: 143, 872
+  offset: 1, 1
+  index: -1
+rubber_lajsna
+  rotate: false
+  xy: 979, 710
+  size: 255, 733
+  orig: 257, 735
+  offset: 1, 1
+  index: -1
+shadow
+  rotate: true
+  xy: 676, 345
+  size: 1098, 162
+  orig: 1100, 163
+  offset: 0, 1
+  index: -1
+wheel_behind
+  rotate: false
+  xy: 0, 1443
+  size: 1369, 372
+  orig: 1371, 374
+  offset: 1, 1
+  index: -1
+wheel_zadnji
+  rotate: false
+  xy: 1759, 1326
+  size: 176, 175
+  orig: 178, 177
+  offset: 1, 1
+  index: -1
+window_a
+  rotate: false
+  xy: 1494, 863
+  size: 265, 638
+  orig: 265, 638
+  offset: 0, 0
+  index: -1
+window_b
+  rotate: true
+  xy: 1369, 1501
+  size: 314, 644
+  orig: 314, 644
+  offset: 0, 0
+  index: -1
+window_d
+  rotate: false
+  xy: 1234, 803
+  size: 260, 640
+  orig: 260, 640
+  offset: 0, 0
+  index: -1

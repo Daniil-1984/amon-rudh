@@ -1,0 +1,13 @@
+{
+ "layerconfigurl": "https://stag-casino-client.api.relaxg.net/capi/2.0/casino/games/getlayerconfig",
+ "launcherconfigurl": "https://d2drhksbtcqozo.cloudfront.net/capi/2.0/casino/games/getlauncherconfig",
+ "clientconfigurl": "https://stag-casino-client.api.relaxg.net/capi/2.0/casino/games/getclientconfig/ios",
+ "engineurl": "https://stag-casino-client.api.relaxg.net/game/",
+ "cdnbase": "https://d2drhksbtcqozo.cloudfront.net",
+ "ipurl": "https://stag-casino-client.api.relaxg.net/capi/2.0/utils/ip",
+ "clientapiroot": "https://stag-casino-client.api.relaxg.net",
+ "translationapi": "https://d2drhksbtcqozo.cloudfront.net/ubo-casino-api/v2/translations",
+ "gamelauncher": "../p2p-launcher/launcher.html",
+ "forceenv": "stg",
+ "site": "stg"
+}

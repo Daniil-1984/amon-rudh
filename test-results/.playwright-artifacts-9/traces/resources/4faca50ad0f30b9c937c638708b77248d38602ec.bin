@@ -1,0 +1,27 @@
+
+blink.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+blink
+  rotate: false
+  xy: 2, 2
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+blink_1
+  rotate: false
+  xy: 328, 344
+  size: 100, 99
+  orig: 100, 100
+  offset: 0, 1
+  index: -1
+odsjaj
+  rotate: false
+  xy: 2, 104
+  size: 324, 339
+  orig: 496, 469
+  offset: 70, 91
+  index: -1
