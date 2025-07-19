@@ -1,5 +1,0 @@
-{
-    "priority": -1,
-    "dependencies": ["popup"],
-    "translations": ["RealityCheck"]
-}

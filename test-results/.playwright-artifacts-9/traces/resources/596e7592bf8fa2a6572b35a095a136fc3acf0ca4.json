@@ -1,6 +1,0 @@
-{
-    "priority": -1,
-    "fonts": ["montserratRegular", "montserratMedium", "montserratExtraBold"],
-    "translations": ["apexSuperWheel"],
-    "dependencies": ["toast"]
-}
