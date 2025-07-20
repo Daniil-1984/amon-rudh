@@ -1,20 +1,16 @@
-# Use official Playwright image with all dependencies installed
-FROM mcr.microsoft.com/playwright:v1.52.0-jammy
+# Базовый образ
+FROM mcr.microsoft.com/playwright:v1.44.0-jammy
 
-# Set working directory
 WORKDIR /app
 
-# Copy package files
 COPY package*.json ./
+RUN npm ci
 
-# Install Node.js dependencies
-RUN npm install
-
-# Copy all project files
 COPY . .
 
-# Set environment variables (optional)
-ENV CI=true
+RUN npx playwright install --with-deps
 
-# Run tests by default (you can override this in docker run)
+# Добавим точку монтирования для отчета
+VOLUME ["/app/playwright-report"]
+
 CMD ["npx", "playwright", "test"]
