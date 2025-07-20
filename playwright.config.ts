@@ -21,7 +21,7 @@ export default defineConfig({
   //retries: process.env.CI ? 2 : 0,
   retries: 1,
   /* Opt out of parallel tests on CI. */
-workers: 1,
+workers: 3,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
 reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
  
@@ -36,7 +36,7 @@ reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
         headless: true,
-    trace: 'on',
+    trace: 'on-first-retry',
     video: 'off',
   },
 
@@ -58,14 +58,14 @@ reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
     // },
 
     /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
+    {
+      name: 'Mobile Chrome',
+      use: { ...devices['Pixel 5'] },
+    },
+    {
+      name: 'Mobile Safari',
+      use: { ...devices['iPhone 12'] },
+    },
 
     /* Test against branded browsers. */
     // {
