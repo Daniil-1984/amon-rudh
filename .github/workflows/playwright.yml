@@ -14,6 +14,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Prepare report folder
+        run: mkdir -p playwright-report
+
       - name: Build Docker image
         run: docker build -t playwright-tests .
 
