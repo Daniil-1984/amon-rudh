@@ -5,12 +5,12 @@ import { delay5Seconds } from './utils';
 import type { BrowserContext } from '@playwright/test';
 
 // Если хочешь запускать на мобильном, можешь раскомментировать
-const pixel = devices['Pixel 5'];
+//const pixel = devices['Pixel 5'];
 
 const test = base.extend<{ context: BrowserContext }>({
   context: async ({ browser }, use) => {
     const context = await browser.newContext({
-      ...pixel, // если нужен mobile
+      //...pixel, // если нужен mobile
       httpCredentials: {
         username: 'luckystake',
         password: 'luckystake1!',
