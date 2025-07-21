@@ -1,16 +1,7 @@
 import { test, expect } from '@playwright/test';
-import path from 'path';
 
 test('winpot test with full video and all steps', async ({ browser }) => {
-  test.setTimeout(120000); // увеличенный таймаут
-
-  const context = await browser.newContext({
-    recordVideo: {
-      dir: 'videos/',
-      size: { width: 1280, height: 720 },
-    },
-  });
-
+  const context = await browser.newContext();
   const page = await context.newPage();
 
   try {
@@ -48,32 +39,6 @@ test('winpot test with full video and all steps', async ({ browser }) => {
     console.log('✅ Все шаги выполнены');
   } catch (err) {
     console.error('❌ Ошибка в одном из шагов:', err);
-  } finally {
-    try {
-      console.log('⏳ Ждём 15 секунд для завершения записи видео');
-      await page.waitForTimeout(15000);
-    } catch (e) {
-      console.error('Ошибка при ожидании перед завершением:', e);
-    }
-
-    const video = page.video();
-
-    try {
-      await context.close(); // закрываем после получения video
-    } catch (e) {
-      console.error('Ошибка при закрытии контекста:', e);
-    }
-
-    if (video) {
-      const savePath = path.join('videos', `video-${Date.now()}.webm`);
-      try {
-        await video.saveAs(savePath);
-        console.log('✅ Видео сохранено по пути:', savePath);
-      } catch (saveErr) {
-        console.error('❌ Ошибка при сохранении видео:', saveErr);
-      }
-    } else {
-      console.log('❌ Видео не было записано.');
-    }
-  }
+  }   
 });
+

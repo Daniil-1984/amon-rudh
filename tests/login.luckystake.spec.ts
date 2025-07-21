@@ -2,7 +2,6 @@ import { test as base, expect, devices } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { HomePage } from '../pages/HomePage';
 import { delay5Seconds } from './utils';
-import path from 'path';
 
 const iPhone15 = {
   name: 'iPhone 15',
@@ -23,12 +22,7 @@ const test = base.extend<{}>({
         username: 'luckystake',
         password: 'luckystake1!',
       },
-      recordVideo: {
-        dir: path.join(__dirname, 'videos'), 
-        size: iPhone15.viewport, 
-      },
     });
-
     await use(context);
     await context.close();
   },
@@ -51,12 +45,5 @@ test('Вход и нажатие Redeem на iPhone 15', async ({ context }) => 
 
   await homePage.clickRedeem();
   await delay5Seconds();
-
-  const video = page.video();
-  if (video) {
-    const targetPath = path.join(__dirname, 'videos', `redeem-video-${Date.now()}.webm`);
-    await video.saveAs(targetPath);
-    console.log('Видео сохранено по пути:', targetPath);
-  }
   await page.close();
 });

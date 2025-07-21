@@ -3,21 +3,11 @@ import fs from 'fs';
 import path from 'path';
 
 test('redeem test', async ({ browser }) => {
-  test.setTimeout(180_000); // увеличенный таймаут
-
-  const videosDir = path.join(__dirname, 'videos');
-  if (!fs.existsSync(videosDir)) {
-    fs.mkdirSync(videosDir);
-  }
-
+  
   const context = await browser.newContext({
     httpCredentials: {
       username: 'luckystake',
       password: 'luckystake1!',
-    },
-    recordVideo: {
-      dir: videosDir,
-      size: { width: 1280, height: 720 },
     },
   });
 
@@ -53,26 +43,9 @@ test('redeem test', async ({ browser }) => {
     await page.getByRole('button', { name: 'Redeem' }).click();
     await page.getByText('SC 500.00').click();
     await page.getByText('SC 1,000.25').click();
-
-    await page.waitForTimeout(5000); // финальный кадр
-  } catch (err) {
-    console.error('❌ Ошибка во время теста:', err);
+    await page.waitForTimeout(5000); 
+     } catch (error) {
+    console.error('Test failed:', error);
   } finally {
-    const video = page.video();
-    await page.close(); // обязательно сначала закрыть страницу, чтобы завершить запись
-
-    if (video) {
-      const videoPath = path.join(videosDir, `redeem-${Date.now()}.webm`);
-      try {
-        await video.saveAs(videoPath);
-        console.log(`🎥 Видео успешно сохранено: ${videoPath}`);
-      } catch (err) {
-        console.error('❌ Ошибка при сохранении видео:', err);
-      }
-    } else {
-      console.log('⚠️ Видео объект не получен');
-    }
-
-    await context.close();
   }
 });

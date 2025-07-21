@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-import { generateRandomEmail, wait, startVideoRecording, stopVideoRecording } from './utils';
+import { wait } from './utils';
 
 test('testing with id', async ({ page }) => {
 
