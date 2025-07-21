@@ -5,12 +5,12 @@ import { delay5Seconds } from './utils';
 import type { BrowserContext } from '@playwright/test';
 
 // Если хочешь запускать на мобильном, можешь раскомментировать
-// const pixel = devices['Pixel 5'];
+const pixel = devices['Pixel 5'];
 
 const test = base.extend<{ context: BrowserContext }>({
   context: async ({ browser }, use) => {
     const context = await browser.newContext({
-      // ...pixel, // если нужен mobile
+      ...pixel, // если нужен mobile
       httpCredentials: {
         username: 'luckystake',
         password: 'luckystake1!',
@@ -41,8 +41,8 @@ test('search testing using page objects', async ({ context }) => {
   await homePage.closePopupIfVisible();
 
   // 5. Поиск игры
-  const searchButton = page.getByRole('button', { name: 'Search' });
-  const searchInput = page.getByRole('textbox', { name: 'Search' });
+const searchButton = page.locator('button.WizButton_primary-text__fH4gU.NavbarArea_searchButton__oD1Ic');
+const searchInput = page.getByPlaceholder('Search');
 
   await searchButton.click();
   await searchInput.fill('siest');
