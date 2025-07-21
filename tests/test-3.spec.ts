@@ -1,12 +1,16 @@
-import { test as base, expect } from '@playwright/test';
+import { test as base, expect, devices } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { HomePage } from '../pages/HomePage';
 import { delay5Seconds } from './utils';
 import type { BrowserContext } from '@playwright/test';
 
+// Если хочешь запускать на мобильном, можешь раскомментировать
+// const pixel = devices['Pixel 5'];
+
 const test = base.extend<{ context: BrowserContext }>({
   context: async ({ browser }, use) => {
     const context = await browser.newContext({
+      // ...pixel, // если нужен mobile
       httpCredentials: {
         username: 'luckystake',
         password: 'luckystake1!',
@@ -17,27 +21,44 @@ const test = base.extend<{ context: BrowserContext }>({
   },
 });
 
-test('search testing', async ({ context }) => {
+test('search testing using page objects', async ({ context }) => {
   const page = await context.newPage();
   const loginPage = new LoginPage(page);
   const homePage = new HomePage(page);
+
+  // 1. Переход на сайт
   await page.goto('https://luckystake.dev/');
+
+  // 2. Закрыть попап, если появился
   await homePage.closePopupIfVisible();
+
+  // 3. Авторизация
   await loginPage.openLoginForm();
   await loginPage.login('wiztestIsabell_Borer@hotmail.com', 'password');
-  
 
-  // Ждём исчезновения возможного блокирующего баннера
+  // 4. Ждём исчезновения возможного баннера
   await page.waitForSelector('.NewHeader_wrapper__8_z0Y', { state: 'detached', timeout: 5000 }).catch(() => {});
   await homePage.closePopupIfVisible();
-  
-  await page.getByRole('button', { name: 'Search' }).click();
-  await page.getByRole('textbox', { name: 'Search' }).fill('siest');
-  await page.getByRole('textbox', { name: 'Search' }).press('CapsLock');
-  await page.getByRole('textbox', { name: 'Search' }).press('CapsLock');
-  await page.getByRole('textbox', { name: 'Search' }).fill('siesta');
-    await delay5Seconds();
-  await page.locator('.SearchGames_search_games__cards_wrapper__8c4ac > div > .WizGameCard_container_gameImage__cFsR9').first().click();
+
+  // 5. Поиск игры
+  const searchButton = page.getByRole('button', { name: 'Search' });
+  const searchInput = page.getByRole('textbox', { name: 'Search' });
+
+  await searchButton.click();
+  await searchInput.fill('siest');
+  await searchInput.press('CapsLock'); // если нужно по сценарию
+  await searchInput.press('CapsLock');
+  await searchInput.fill('siesta');
+
+  await delay5Seconds();
+
+  // 6. Клик по первой найденной игре
+  const firstGame = page.locator('.SearchGames_search_games__cards_wrapper__8c4ac > div > .WizGameCard_container_gameImage__cFsR9').first();
+  await firstGame.scrollIntoViewIfNeeded();
+  await firstGame.click();
+
+  // 7. Клик по кнопке "Play now"
   await page.getByRole('button', { name: 'Play now' }).click();
+
   await delay5Seconds();
 });
