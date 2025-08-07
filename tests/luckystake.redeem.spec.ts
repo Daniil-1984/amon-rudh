@@ -17,6 +17,8 @@ test('redeem test', async ({ browser }) => {
   try {
     await page.goto('https://luckystake.dev/');
     await homePage.closePopupIfVisible();
+    await page.locator('.WizIconButton_base__JfGpY.WizPopupWrapper_close__hKtRn').click();
+
     await loginPage.openLoginForm();
     await loginPage.login('wiztestIsabell_Borer@hotmail.com', 'password');
     await homePage.closePopupIfVisible();
