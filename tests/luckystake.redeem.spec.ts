@@ -1,51 +1,65 @@
 import { test, expect } from '@playwright/test';
-import fs from 'fs';
-import path from 'path';
+import { LoginPage } from '../pages/LoginPage';
+import { HomePage } from '../pages/HomePage';
 
 test('redeem test', async ({ browser }) => {
-  
   const context = await browser.newContext({
     httpCredentials: {
       username: 'luckystake',
       password: 'luckystake1!',
     },
   });
-
   const page = await context.newPage();
+
+  const loginPage = new LoginPage(page);
+  const homePage = new HomePage(page);
 
   try {
     await page.goto('https://luckystake.dev/');
-    await page.locator('.WizPopupWrapper_wrapper__container__D4qDj > .WizIconButton_base__JfGpY').click();
-    await page.getByRole('button', { name: 'Log In' }).click();
-    await page.getByText('Email or Username').click();
-    await page.getByRole('textbox', { name: 'Email or Username' }).fill('wiztestIsabell_Borer@hotmail.com');
-    await page.getByRole('textbox', { name: 'Password' }).click();
-    await page.getByRole('textbox', { name: 'Password' }).fill('password');
-    await page.getByRole('button', { name: 'Sign in' }).click();
-    await page.locator('.WizPopupWrapper_wrapper__container__D4qDj > button').click();
+    await homePage.closePopupIfVisible();
+    await loginPage.openLoginForm();
+    await loginPage.login('wiztestIsabell_Borer@hotmail.com', 'password');
+    await homePage.closePopupIfVisible();
+await page.locator('.WizIconButton_base__JfGpY.WizPopupWrapper_close__hKtRn').click();
     await page.getByRole('button', { name: 'Redeem' }).click();
-    await page.locator('span.RedeemPopup_highlight__pL8TA', { hasText: 'SC 500.00' }).click();
+    await page.getByText('SC 500.00', { exact: true }).click();
+    await page.getByText('SC 500.25', { exact: true }).click();
+    await page.getByText('SC 1,000.25', { exact: true }).click();
     await page.getByRole('button', { name: 'Redeem Gift Cards' }).click();
-    await page.locator('iframe[title="WizCashier"]').contentFrame().getByRole('button', { name: 'Redeem' }).click();
-    await page.locator('iframe[title="WizCashier"]').contentFrame().locator('iframe').contentFrame().locator('.clear-image-overlay').first().click();
-    await page.locator('iframe[title="WizCashier"]').contentFrame().locator('iframe').contentFrame().getByTestId('button-option-500').getByText('$').click();
-    await page.locator('iframe[title="WizCashier"]').contentFrame().locator('iframe').contentFrame().getByRole('button', { name: 'Select Gift Card' }).click();
-    await page.locator('iframe[title="WizCashier"]').contentFrame().locator('iframe').contentFrame().getByRole('button', { name: 'Confirm purchase' }).dblclick();
+
+    const outerFrameElement = await page.locator('iframe[title="WizCashier"]').elementHandle();
+    const outerFrame = await outerFrameElement?.contentFrame();
+    if (!outerFrame) throw new Error('Outer iframe not loaded');
+
+    await outerFrame.getByRole('button', { name: 'Redeem' }).click();
+
+    const innerFrameElement = await outerFrame.locator('iframe').elementHandle();
+    const innerFrame = await innerFrameElement?.contentFrame();
+    if (!innerFrame) throw new Error('Inner iframe not loaded');
+
+    await innerFrame.locator('.clear-image-overlay').first().click();
+    await innerFrame.getByRole('button', { name: 'Select Gift Card' }).click();
+    await innerFrame.getByRole('button', { name: 'Confirm purchase' }).click();
+
     await page.getByRole('button', { name: 'Close' }).click();
+
     await page.getByRole('button', { name: 'Redeem' }).click();
-    await page.getByText('SC 495.00').click();
-    await page.getByText('SC 995.25').click();
-    await page.getByText('SC 500.25').click();
+    await page.getByText('SC 495.00', { exact: true }).click();
+    await page.getByText('SC 995.25', { exact: true }).click();
+    await page.getByText('SC 500.25', { exact: true }).click();
     await page.getByRole('button', { name: 'Cancel' }).click();
-    await page.getByText('SC 495.00').click();
+
+    await page.locator('.RedeemPopup_close__3XX1x > svg').click();
     await page.waitForTimeout(5000);
-    await page.locator('div').filter({ hasText: /^Redeem$/ }).locator('path').click();
+
     await page.getByRole('button', { name: 'Redeem' }).click();
-    await page.getByText('SC 500.00').click();
-    await page.getByText('SC 1,000.25').click();
-    await page.waitForTimeout(5000); 
-     } catch (error) {
+    await page.getByText('SC 500.25', { exact: true }).click();
+    await page.getByText('SC 1,000.25', { exact: true }).click();
+
+    await page.waitForTimeout(5000);
+  } catch (error) {
     console.error('Test failed:', error);
   } finally {
+    await context.close();
   }
 });

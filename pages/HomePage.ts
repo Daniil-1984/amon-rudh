@@ -1,5 +1,4 @@
-import { Page, Locator, expect } from '@playwright/test';
- 
+import { Page, Locator } from '@playwright/test';
 
 export class HomePage {
   readonly page: Page;
@@ -18,31 +17,22 @@ export class HomePage {
     }
   }
 
- async clickRedeem() {
-  const redeemButton = this.page.getByRole('button', { name: 'Redeem' }).first();
+  async clickRedeem() {
+    const button = this.redeemButton.first();
 
-  await redeemButton.waitFor({ state: 'visible' });
-  await redeemButton.scrollIntoViewIfNeeded();
-  await this.page.waitForTimeout(500); // небольшая пауза для стабилизации элемента
-  
-  try {
-    await redeemButton.click({ force: true });
-  } catch {
-    const box = await redeemButton.boundingBox();
-    if (box) {
-      await this.page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
-    } else {
-      throw new Error('Redeem button bounding box not found');
+    await button.waitFor({ state: 'visible' });
+    await button.scrollIntoViewIfNeeded();
+    await this.page.waitForTimeout(500); // небольшая пауза для стабилизации элемента
+
+    try {
+      await button.click({ force: true });
+    } catch {
+      const box = await button.boundingBox();
+      if (box) {
+        await this.page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+      } else {
+        throw new Error('Redeem button bounding box not found');
+      }
     }
-  }
-}
-
-
-  // Пример из HomePage.ts
-
-  async getBalance(): Promise<string | null> {
-    const balanceLocator = this.page.getByText(/^SC \d+(\.\d{2})?$/);
-    await balanceLocator.waitFor({ state: 'visible', timeout: 25000 });
-    return balanceLocator.textContent();
   }
 }

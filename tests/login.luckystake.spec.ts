@@ -4,6 +4,7 @@ import { HomePage } from '../pages/HomePage';
 import { delay5Seconds } from './utils';
 
 // Используем встроенную конфигурацию iPhone 15
+await page.getByRole('textbox', { name: 'Email or Username' }).fill('');
 //const iPhone15 = devices['iPhone 15'];
 
 const test = base.extend<{}>({
