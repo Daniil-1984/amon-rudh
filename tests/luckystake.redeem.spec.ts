@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { HomePage } from '../pages/HomePage';
+import { delay5Seconds } from './utils';
 
 test('redeem test', async ({ browser }) => {
   const context = await browser.newContext({
@@ -46,7 +47,10 @@ test('redeem test', async ({ browser }) => {
   await page.getByText('SC 500.25').click();
   await page.getByText('SC 975.25').click();
   await page.locator('.RedeemPopup_close__3XX1x > svg').click();
+    await delay5Seconds();
   await page.getByRole('button', { name: 'Redeem' }).click();
+  await delay5Seconds();
+  
   await page.getByText('SC 480.00').click();
   await page.getByText('SC 500.25').click();
   await page.getByText('SC 980.25').click();
