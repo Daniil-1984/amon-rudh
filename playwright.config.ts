@@ -6,7 +6,7 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: isCI,
-  retries: 1,
+  retries: 0,
   workers: 3,
   reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
   timeout: 120000, // 2 минуты
