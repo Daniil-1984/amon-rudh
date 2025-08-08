@@ -1,0 +1,8 @@
+{
+  "playwright.testExplorer.enabled": true,
+  "playwright.trace.playwrightInspect": true,
+  "playwright.editor.showRecordButtons": true,
+  "playwright.env": {
+    "DEBUG": "pw:api"
+  }
+}
