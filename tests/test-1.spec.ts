@@ -26,8 +26,9 @@ test('Login and Redeem flow', async ({ context }) => {
   const homePage = new HomePage(page);
   const loginPage = new LoginPage(page);
   await page.goto('https://luckystake.dev/');
+          await page.locator('.WizIconButton_base__pi4E4.WizPopupWrapper_close__AbJBr').click();
 
-await page.locator('.WizIconButton_base__JfGpY.WizPopupWrapper_close__hKtRn').click();
+
 await page.getByRole('button', { name: 'Log In' }).click();
  await page.getByText('Email or Username').click();
     await page.getByRole('textbox', { name: 'Email or Username' }).fill('wiztestIsabell_Borer@hotmail.com');

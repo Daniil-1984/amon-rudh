@@ -39,6 +39,7 @@ test('search testing using page objects', async ({ context }) => {
   // 4. Ждём исчезновения возможного баннера
   await page.waitForSelector('.NewHeader_wrapper__8_z0Y', { state: 'detached', timeout: 5000 }).catch(() => {});
   await homePage.closePopupIfVisible();
+await page.locator('.WizIconButton_base__JfGpY.WizPopupWrapper_close__hKtRn').click();
 
   // 5. Поиск игры
 const searchButton = page.locator('button.WizButton_primary-text__fH4gU.NavbarArea_searchButton__oD1Ic');
