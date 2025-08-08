@@ -1,0 +1,31 @@
+name: Run Playwright Tests with Report
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Prepare report folder
+        run: mkdir -p playwright-report
+
+      - name: Build Docker image
+        run: docker build -t playwright-tests .
+
+      - name: Run Playwright tests in Docker
+        run: |
+          docker run --rm -v ${{ github.workspace }}/playwright-report:/app/playwright-report playwright-tests       
+      - name: Upload Playwright HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report
