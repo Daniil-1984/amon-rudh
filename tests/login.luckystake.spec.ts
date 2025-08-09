@@ -10,7 +10,6 @@ import { delay5Seconds } from './utils';
 const test = base.extend<{}>({
   context: async ({ browser }, use) => {
     const context = await browser.newContext({
-      //...iPhone15, // эмуляция iPhone 15 с Safari
       httpCredentials: {
         username: 'luckystake',
         password: 'luckystake1!',
@@ -24,7 +23,7 @@ const test = base.extend<{}>({
 test('Вход и нажатие Redeem на iPhone 15 (Safari)', async ({ context }) => {
   const page = await context.newPage();
   const loginPage = new LoginPage(page);
-  const homePage = new HomePage(page);
+  const homePage = new HomePage(page);await page.getByRole('button', { name: 'LOG IN' }).click();
 
   await page.goto('https://luckystake.dev/');
   await homePage.closePopupIfVisible();
