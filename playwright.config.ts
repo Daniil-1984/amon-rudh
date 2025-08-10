@@ -15,6 +15,7 @@ export default defineConfig({
     headless: true,
     trace: 'on-first-retry',
     video: 'off',
+    screenshot: 'on',
   },
 
   projects: [
