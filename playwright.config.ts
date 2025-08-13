@@ -3,7 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 const isCI = !!process.env.CI;
 
 export default defineConfig({
-  testDir: './tests/mobile_tests',
+  testDir: './tests',
   fullyParallel: true,
   forbidOnly: isCI,
   retries: 0,
@@ -15,14 +15,14 @@ export default defineConfig({
     headless: true,
     trace: 'on-first-retry',
     video: 'off',
-    screenshot: 'on',
+    screenshot: 'off',
   },
 
   projects: [
-    // {
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
-    // },
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
@@ -32,10 +32,10 @@ export default defineConfig({
     //   use: { ...devices['Desktop Safari'] },
     // },
 
-    {
-      name: 'Mobile Chrome',
-      use: { ...devices['Pixel 5'] },
-    },
+    // {
+    //   name: 'Mobile Chrome',
+    //   use: { ...devices['Pixel 5'] },
+    // },
     // {
     //   name: 'Mobile Safari',
     //   use: { ...devices['iPhone 12'] },
