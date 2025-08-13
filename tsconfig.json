@@ -9,5 +9,5 @@
     "skipLibCheck": true,
     "baseUrl": "."
   },
-  "include": ["tests", "mobile_tests", "pages"]
+  "include": ["tests", "mobile_tests", "pages", "first.load.test.js"]
 }
