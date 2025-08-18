@@ -1,7 +1,7 @@
 import { test as base, expect, devices } from '@playwright/test';
-import { LoginPage } from '../../pages/LoginPage';
-import { HomePage } from '../../pages/HomePage';
-import { delay5Seconds } from '../utils';
+import { LoginPage } from '../pages/LoginPage';
+import { HomePage } from '../pages/HomePage';
+import { delay5Seconds } from '../utils/utils';
 
 const test = base.extend<{}>({
   context: async ({ browser }, use) => {
