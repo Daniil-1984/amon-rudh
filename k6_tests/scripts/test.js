@@ -7,10 +7,10 @@ export const options = {
 };
 
 export default function () {
-  // Test a simple GET request
+  // Example request
   const response = http.get('https://httpbin.org/get');
   
-  // Check if the response is successful
+  // check the response
   check(response, {
     'status is 200': (r) => r.status === 200,
     'response time < 500ms': (r) => r.timings.duration < 500,

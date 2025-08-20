@@ -3,7 +3,7 @@ import { LoginPage } from '../pages/LoginPage';
 import { HomePage } from '../pages/HomePage';
 import { delay5Seconds } from '../utils/utils';
 
-const test = base.extend<{ /* если есть типы контекста */ }>({
+const test = base.extend<{  }>({
   context: async ({ browser }, use) => {
     const context = await browser.newContext({
       httpCredentials: {

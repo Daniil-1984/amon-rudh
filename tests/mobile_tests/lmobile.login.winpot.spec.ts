@@ -8,5 +8,5 @@ test('Login to Winpot', async ({ page }) => {
     await page.click('input[name="password"]');
     await page.fill('input[name="password"]', 'password');
     await page.click('button[id="login-form-submit-button"]');
-    await page.waitForTimeout(8000); // Ждём, чтобы страница прогрузилась
-  });
+    await page.waitForTimeout(8000); 
+      });

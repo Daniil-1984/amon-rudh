@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
 import { HomePage } from '../pages/HomePage';
-import { delay5Seconds } from './utils';
+import { delay5Seconds } from '../utils/utils';
 
 test('redeem test', async ({ browser }) => {
   const context = await browser.newContext({

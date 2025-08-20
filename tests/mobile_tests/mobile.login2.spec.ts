@@ -4,13 +4,12 @@ import { HomePage } from '../pages/HomePage';
 import { delay5Seconds } from '../utils/utils';
 
 
-// Если нужно будет подключить iPhone:
 // const iPhone15 = devices['iPhone 15'];
 
 const test = base.extend<{}>({
   context: async ({ browser }, use) => {
     const context = await browser.newContext({
-       //...iPhone15, // если хочешь эмуляцию iPhone
+      
       httpCredentials: {
         username: 'luckystake',
         password: 'luckystake1!',
@@ -21,7 +20,6 @@ const test = base.extend<{}>({
   },
 });
 
-// ✅ Сам тест теперь внутри test()
 test('Login and Redeem flow', async ({ context }) => {
   const page = await context.newPage();
   const homePage = new HomePage(page);

@@ -1,17 +1,15 @@
 import { test as base, expect, devices, BrowserContext } from '@playwright/test';
-import { wait } from './utils';
+import { wait } from '../utils/utils';
 
-// Эмуляция Pixel 5
 //const pixel = devices['Pixel 5'];
 
-// Расширяем тест, чтобы создавать context с мобильной эмуляцией
 const test = base.extend<{ context: BrowserContext }>( {
   context: async ({ browser }, use) => {
     const context = await browser.newContext({
       //...pixel,
     });
     await use(context);
-    // НЕ закрываем context, чтобы браузер не закрывался!
+   
     // await context.close();
   },
 });
@@ -28,7 +26,6 @@ test('winpot test clicking game and popup OK by MuiButton-label with infinite wa
   await page.locator('#login-form').getByRole('button').first().click();
   await page.locator('#login-form-submit-button').click();
 
-  // Ищем секцию "Winpot Exclusivo" и кликаем по первой игре внутри неё
   const section = page.locator('text=Winpot Exclusivo').first();
   await section.scrollIntoViewIfNeeded();
 
@@ -37,7 +34,6 @@ test('winpot test clicking game and popup OK by MuiButton-label with infinite wa
   await firstGame.click();
   await wait(5000);
 
-  // Кнопка "Jugar ahora"
   const jugarAhoraButton = page.locator('span.MuiButton-label', { hasText: 'Jugar ahora' });
 
   if (await jugarAhoraButton.isVisible({ timeout: 0 })) {
@@ -47,10 +43,9 @@ test('winpot test clicking game and popup OK by MuiButton-label with infinite wa
     console.log('Кнопка "Jugar ahora" не найдена — пропускаем её.');
   }
 
-  // В любом случае ждем кнопку "OK" и нажимаем её (игра либо подтверждение, либо недоступна)
   const okButton = page.locator('span.MuiButton-label', { hasText: 'OK' });
-  await okButton.waitFor({ state: 'visible' }); // ждем видимость кнопки "OK"
-  await okButton.click();
+  await okButton.waitFor({ state: 'visible' }); 
+    await okButton.click();
   await wait(5000);
 
   console.log('✅ Кнопка "OK" нажата, тест завершён.');

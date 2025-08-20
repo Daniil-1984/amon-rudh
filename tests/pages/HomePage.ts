@@ -22,7 +22,7 @@ export class HomePage {
 
     await button.waitFor({ state: 'visible' });
     await button.scrollIntoViewIfNeeded();
-    await this.page.waitForTimeout(500); // небольшая пауза для стабилизации элемента
+    await this.page.waitForTimeout(500); 
 
     try {
       await button.click({ force: true });

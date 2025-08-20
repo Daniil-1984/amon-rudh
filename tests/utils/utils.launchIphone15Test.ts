@@ -22,7 +22,7 @@ export async function launchIphone15Test(browser: Browser): Promise<{
       password: 'luckystake1!',
     },
     recordVideo: {
-      dir: path.join(__dirname, '../videos'), // Папка для видео
+      dir: path.join(__dirname, '../videos'), // folder for videos
       size: iPhone15.viewport,
     },
   });

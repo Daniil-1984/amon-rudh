@@ -11,7 +11,7 @@ export const options = {
 };
 
 export default function () {
-  const url = "https://www.winpot.mx/api/login"; // ⚠️ проверь реальный endpoint
+  const url = "https://www.winpot.mx/api/login"; 
   const payload = JSON.stringify({
     username: "wiztestAlvina_Vandervort@gmail.com",
     password: "password",
