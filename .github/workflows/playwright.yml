@@ -1,24 +1,22 @@
-name: Run Tests
+name: Run K6 Load Test in Docker
 
 on:
+  workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
-  build-and-test:
+  k6-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -t my-tests ./tests/DOCKER
+        run: docker build -t k6-load-test .
 
-      - name: Run Playwright tests (Desktop + Mobile)
-        run: docker run --rm my-tests npx playwright test
-
-      - name: Run k6 tests
-        run: docker run --rm my-tests k6 run ./tests/k6/test.js
+      - name: Run K6 Load Test
+        run: docker run --rm k6-load-test
