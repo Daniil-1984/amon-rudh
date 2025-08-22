@@ -1,34 +1,34 @@
-name: Full Test Suite
+name: Test Automation
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
 
 jobs:
-  tests:
+  e2e-tests:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        type: [desktop, mobile, k6]
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      # 1. Клонируем репозиторий
+      - uses: actions/checkout@v3
 
-      - name: Set up Docker Buildx
+      # 2. Ставим Docker
+      - name: Set up Docker
         uses: docker/setup-buildx-action@v2
 
-      - name: Build Docker image
-        run: docker build -t full-test-suite -f ./tests/DOCKER/Dockerfile .
+      # 3. Build Docker для Playwright
+      - name: Build Playwright Docker
+        run: docker build -t playwright-tests D:/Playwright_Automation/tests/DOCKER
 
-      - name: Run Tests
-        run: |
-          if [ "${{ matrix.type }}" == "desktop" ]; then
-            docker run --rm full-test-suite npx playwright test --project=desktop
-          elif [ "${{ matrix.type }}" == "mobile" ]; then
-            docker run --rm full-test-suite npx playwright test --project=mobile
-          elif [ "${{ matrix.type }}" == "k6" ]; then
-            docker run --rm full-test-suite k6 run ./tests/load/test.js
-          fi
+      # 4. Run Playwright тесты (Desktop)
+      - name: Run Desktop Tests
+        run: docker run --rm playwright-tests npm run test:desktop
+
+      # 5. Run Playwright тесты (Mobile)
+      - name: Run Mobile Tests
+        run: docker run --rm playwright-tests npm run test:mobile
+
+      # 6. Run k6 тесты (используем официальный образ)
+      - name: Run k6 Load Tests
+        run: docker run --rm -v D:/Playwright_Automation/tests/load:/tests loadimpact/k6 run /tests/test.js
