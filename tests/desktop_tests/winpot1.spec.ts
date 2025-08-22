@@ -38,9 +38,9 @@ test('winpot test clicking game and popup OK by MuiButton-label with infinite wa
 
   if (await jugarAhoraButton.isVisible({ timeout: 0 })) {
     await jugarAhoraButton.click();
-    console.log('✅ Кнопка "Jugar ahora" нажата.');
+    console.log(' button "Jugar ahora" is clicked.');
   } else {
-    console.log('Кнопка "Jugar ahora" не найдена — пропускаем её.');
+    console.log('button "Jugar ahora" is not found, skipping.');
   }
 
   const okButton = page.locator('span.MuiButton-label', { hasText: 'OK' });

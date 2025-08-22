@@ -9,7 +9,7 @@ import type { BrowserContext } from '@playwright/test';
 const test = base.extend<{ context: BrowserContext }>({
   context: async ({ browser }, use) => {
     const context = await browser.newContext({
-      //...pixel, // если нужен mobile
+      //...pixel, //
       httpCredentials: {
         username: 'luckystake',
         password: 'luckystake1!',
