@@ -1,0 +1,20 @@
+# Dockerfile.mobile (например, в tests/mobile_tests/DOCKER/)
+FROM mcr.microsoft.com/playwright:v1.44.0-jammy
+
+# Рабочая директория внутри контейнера
+WORKDIR /app
+
+# Копируем package.json и package-lock.json мобильных тестов
+COPY ../package*.json ./
+
+# Устанавливаем зависимости
+RUN npm ci
+
+# Копируем сами тесты
+COPY ../ ./
+
+# Устанавливаем все необходимые браузеры Playwright
+RUN npx playwright install --with-deps
+
+# По умолчанию запускать все мобильные тесты
+CMD ["npx", "playwright", "test"]
