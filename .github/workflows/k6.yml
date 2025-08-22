@@ -1,0 +1,22 @@
+name: Run K6 Load Tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  k6-tests:
+    name: K6 Load Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build K6 Docker image
+        run: docker build -f k6_tests/Docker/Dockerfile.k6 -t k6-tests ./k6_tests
+
+      - name: Run K6 Tests
+        run: docker run --rm k6-tests

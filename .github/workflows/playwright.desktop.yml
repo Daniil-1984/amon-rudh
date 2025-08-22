@@ -1,0 +1,22 @@
+name: Run Desktop Tests Only
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  desktop-tests:
+    name: Playwright Desktop Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Desktop Docker image
+        run: docker build -f tests/desktop_tests/DOCKER/Dockerfile -t desktop-tests ./tests/desktop_tests
+
+      - name: Run Desktop Tests
+        run: docker run --rm desktop-tests
