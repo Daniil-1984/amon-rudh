@@ -1,4 +1,4 @@
-name: Run Autotests Separately
+name: Run All Tests
 
 on:
   workflow_dispatch:
@@ -8,26 +8,41 @@ on:
     branches: [main]
 
 jobs:
-  playwright-tests:
+  desktop-tests:
+    name: Playwright Desktop Tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Build Playwright Docker image
-        run: docker build -f tests/DOCKER/Dockerfile -t playwright-tests ./tests
+      - name: Build Desktop Docker image
+        run: docker build -f tests/DOCKER/Dockerfile -t desktop-tests ./tests
 
-      - name: Run Playwright tests
-        run: docker run --rm playwright-tests
+      - name: Run Desktop Tests
+        run: docker run --rm desktop-tests
+
+  mobile-tests:
+    name: Playwright Mobile Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Mobile Docker image
+        run: docker build -f tests/DOCKER/Dockerfile -t mobile-tests ./tests/mobile_tests
+
+      - name: Run Mobile Tests
+        run: docker run --rm mobile-tests
 
   k6-tests:
+    name: K6 Load Tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Build k6 Docker image
+      - name: Build K6 Docker image
         run: docker build -f k6_tests/Docker/Dockerfile.k6 -t k6-tests ./k6_tests
 
-      - name: Run K6 tests
+      - name: Run K6 Tests
         run: docker run --rm k6-tests
