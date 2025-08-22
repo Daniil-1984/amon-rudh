@@ -1,4 +1,4 @@
-FROM loadimpact/k6:latest
+FROM grafana/k6:latest
 
 WORKDIR /app
 
@@ -6,4 +6,5 @@ WORKDIR /app
 COPY scripts ./scripts
 
 # По умолчанию запускать первый тест
-CMD ["k6", "run", "scripts/first.load.test.js"]
+ENTRYPOINT ["k6"]
+CMD ["run", "scripts/first.load.test.js"]
