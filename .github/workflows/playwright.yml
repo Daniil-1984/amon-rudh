@@ -20,7 +20,11 @@ on:
 
 jobs:
   mobile-tests:
-    if: github.event.inputs.target == 'all' || github.event.inputs.target == 'mobile'
+    if: |
+      github.event_name == 'push' ||
+      github.event_name == 'pull_request' ||
+      github.event.inputs.target == 'all' ||
+      github.event.inputs.target == 'mobile'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,7 +34,11 @@ jobs:
         run: npx playwright test ./tests/mobile_tests
 
   desktop-tests:
-    if: github.event.inputs.target == 'all' || github.event.inputs.target == 'desktop'
+    if: |
+      github.event_name == 'push' ||
+      github.event_name == 'pull_request' ||
+      github.event.inputs.target == 'all' ||
+      github.event.inputs.target == 'desktop'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -40,7 +48,11 @@ jobs:
         run: npx playwright test ./tests/desktop_tests
 
   k6-tests:
-    if: github.event.inputs.target == 'all' || github.event.inputs.target == 'k6'
+    if: |
+      github.event_name == 'push' ||
+      github.event_name == 'pull_request' ||
+      github.event.inputs.target == 'all' ||
+      github.event.inputs.target == 'k6'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
