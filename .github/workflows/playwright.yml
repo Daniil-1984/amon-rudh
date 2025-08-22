@@ -1,16 +1,47 @@
-name: Run K6 Load Test in Docker
+name: Run Playwright & K6 Tests
 
 on:
   workflow_dispatch:
+    inputs:
+      target:
+        description: "Какие тесты запускать"
+        required: true
+        default: "all"
+        type: choice
+        options:
+          - all
+          - mobile
+          - desktop
+          - k6
   push:
     branches: [main]
   pull_request:
     branches: [main]
 
 jobs:
-  k6-test:
+  mobile-tests:
+    if: github.event.inputs.target == 'all' || github.event.inputs.target == 'mobile'
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
+      - name: Run Playwright Mobile Tests
+        run: npx playwright test D:\Playwright_Automation\tests\mobile_tests
+
+  desktop-tests:
+    if: github.event.inputs.target == 'all' || github.event.inputs.target == 'desktop'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Playwright Desktop Tests
+        run: npx playwright test D:\Playwright_Automation\tests\desktop_tests
+
+  k6-tests:
+    if: github.event.inputs.target == 'all' || github.event.inputs.target == 'k6'
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -18,5 +49,5 @@ jobs:
       - name: Build Docker image
         run: docker build -t k6-load-test .
 
-      - name: Run K6 Load Test
-        run: docker run --rm k6-load-test
+      - name: Run K6 Load Tests
+        run: docker run --rm k6-load-test D:\Playwright_Automation\k6_tests\scripts
