@@ -47,7 +47,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker image
-        run: docker build -t k6-load-test .
+        run: docker build -t k6-load-test -f ./tests/DOCKER/Dockerfile .
+
 
       - name: Run K6 Load Tests
         run: docker run --rm k6-load-test D:\Playwright_Automation\k6_tests\scripts
