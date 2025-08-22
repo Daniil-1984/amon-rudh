@@ -1,0 +1,7 @@
+# Dockerfile.k6
+FROM loadimpact/k6:latest
+
+WORKDIR /app
+COPY k6 ./k6
+
+CMD ["k6", "run", "first.load.test.js"]

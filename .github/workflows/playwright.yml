@@ -1,4 +1,4 @@
-name: Run K6 Load Test in Docker
+name: Run Tests Separately
 
 on:
   workflow_dispatch:
@@ -8,15 +8,20 @@ on:
     branches: [main]
 
 jobs:
-  k6-test:
+  playwright-tests:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - name: Build Playwright Docker image
+        run: docker build -f Dockerfile.playwright -t playwright-tests .
+      - name: Run Playwright tests
+        run: docker run --rm playwright-tests
 
-      - name: Build Docker image
-        run: docker build -t k6-load-test .
-
-      - name: Run K6 Load Test
-        run: docker run --rm k6-load-test
+  k6-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build k6 Docker image
+        run: docker build -f Dockerfile.k6 -t k6-tests .
+      - name: Run k6 tests
+        run: docker run --rm k6-tests
