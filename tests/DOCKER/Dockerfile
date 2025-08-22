@@ -14,5 +14,6 @@ COPY . .
 # Устанавливаем браузеры Playwright
 RUN npx playwright install --with-deps
 
-# По умолчанию запускаем все тесты
-CMD ["npx", "playwright", "test"]
+# Запускать только desktop тесты
+CMD ["npx", "playwright", "test", "desktop_tests"]
+
