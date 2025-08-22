@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Desktop Docker image
-        run: docker build -f tests/DOCKER/Dockerfile -t desktop-tests ./tests/desktop_tests
+        run: docker build -f tests/DOCKER/Dockerfile -t desktop-tests ./tests
 
       - name: Run Desktop Tests
         run: docker run --rm desktop-tests
