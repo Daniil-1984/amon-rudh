@@ -1,0 +1,30 @@
+{
+  "name": "playwright_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "k6": "^0.0.0",
+    "playwright": "^1.55.0",
+    "playwright-core": "^1.54.1",
+    "undici-types": "^6.20.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkolotii/daniia_rnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mkolotii/daniia_rnd/issues"
+  },
+  "homepage": "https://github.com/mkolotii/daniia_rnd#readme"
+}

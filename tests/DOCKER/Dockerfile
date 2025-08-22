@@ -1,31 +1,35 @@
-# Базовый образ с Node.js
-FROM node:20-slim
+# Используем официальный образ Node.js
+FROM node:18-bullseye-slim
 
 # Устанавливаем зависимости для Playwright
-RUN apt-get update && \
-    apt-get install -y wget curl git libnss3 libatk-bridge2.0-0 libgtk-3-0 libxss1 libasound2 && \
-    rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    curl \
+    ca-certificates \
+    gnupg \
+    lsb-release \
+    && rm -rf /var/lib/apt/lists/*
 
-# Устанавливаем k6
-RUN curl -s https://dl.k6.io/key.gpg | gpg --dearmor | tee /usr/share/keyrings/k6-archive-keyring.gpg >/dev/null && \
-    echo "deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main" | tee /etc/apt/sources.list.d/k6.list && \
-    apt-get update && apt-get install -y k6 && \
-    rm -rf /var/lib/apt/lists/*
+# Добавляем ключ и репозиторий для k6
+RUN curl -fsSL https://dl.k6.io/key.gpg | tee /etc/apt/trusted.gpg.d/k6.asc
+RUN echo "deb https://dl.k6.io/deb stable main" | tee /etc/apt/sources.list.d/k6.list
 
-# Создаем рабочую директорию
+# Обновляем список пакетов и устанавливаем k6
+RUN apt-get update && apt-get install -y k6
+
+# Устанавливаем Playwright и его зависимости
+RUN npm install -g playwright
+
+# Устанавливаем рабочую директорию
 WORKDIR /app
 
-# Копируем package.json и package-lock.json для Playwright
+# Копируем package.json и package-lock.json
 COPY package*.json ./
 
-# Устанавливаем Node зависимости (Playwright)
-RUN npm install
+# Устанавливаем зависимости проекта
+RUN npm ci
 
-# Копируем тесты
+# Копируем все остальные файлы проекта
 COPY . .
 
-# Устанавливаем браузеры Playwright
-RUN npx playwright install --with-deps
-
-# По умолчанию контейнер ничего не запускает
-CMD [ "bash" ]
+# Указываем команду по умолчанию
+CMD ["npm", "test"]
