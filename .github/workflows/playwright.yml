@@ -1,4 +1,4 @@
-name: Run Tests Separately
+name: Run Autotests Separately
 
 on:
   workflow_dispatch:
@@ -11,17 +11,23 @@ jobs:
   playwright-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Build Playwright Docker image
-        run: docker build -f Dockerfile.playwright -t playwright-tests .
+        run: docker build -f tests/DOCKER/Dockerfile -t playwright-tests ./tests
+
       - name: Run Playwright tests
         run: docker run --rm playwright-tests
 
   k6-tests:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Build k6 Docker image
-        run: docker build -f Dockerfile.k6 -t k6-tests .
-      - name: Run k6 tests
+        run: docker build -f k6_tests/Docker/Dockerfile.k6 -t k6-tests ./k6_tests
+
+      - name: Run K6 tests
         run: docker run --rm k6-tests
