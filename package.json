@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/mkolotii/daniia_rnd/issues"
   },
-  "homepage": "https://github.com/mkolotii/daniia_rnd#readme"
+  "homepage": "https://github.com/mkolotii/daniia_rnd#readme",
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  }
 }

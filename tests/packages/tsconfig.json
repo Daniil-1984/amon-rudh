@@ -7,7 +7,15 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "types": ["node", "@playwright/test"]
   },
-  "include": ["tests", "mobile_tests", "tests/pages", "first.load.test.js", "LOAD_TESTS/test.js"]
+  "include": [
+    "tests",
+    "mobile_tests",
+    "tests/pages",
+    "first.load.test.js",
+    "LOAD_TESTS/test.js",
+    "playwright.config.ts"
+  ]
 }

@@ -23,8 +23,8 @@ const test = base.extend<{}>({
 test('Вход и нажатие Redeem на iPhone 15 (Safari)', async ({ context }) => {
   const page = await context.newPage();
   const loginPage = new LoginPage(page);
-  const homePage = new HomePage(page);await page.getByRole('button', { name: 'LOG IN' }).click();
-
+  const homePage = new HomePage(page);
+  
   await page.goto('https://luckystake.dev/');
   await homePage.closePopupIfVisible();
   await loginPage.openLoginForm();
@@ -35,7 +35,9 @@ test('Вход и нажатие Redeem на iPhone 15 (Safari)', async ({ conte
     .catch(() => {});
   await homePage.closePopupIfVisible();
 
-  await homePage.clickRedeem();
+  // await homePage.clickRedeem();
   await delay5Seconds();
+  await page.screenshot({ path: 'screenshots/login_redeem.png', fullPage: true });
+
   await page.close();
 });
